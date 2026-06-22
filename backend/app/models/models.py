@@ -140,8 +140,17 @@ class Match(Base):
         ForeignKey("rounds.roundid")
     )
 
-    home_team_id = Column(String, nullable=False)
-    away_team_id = Column(String, nullable=False)
+    home_team_id = Column(
+    String,
+    ForeignKey("teams.teamid"),
+    nullable=False
+    )
+
+    away_team_id = Column(
+    String,
+    ForeignKey("teams.teamid"),
+    nullable=False
+    )
 
     home_odds = Column(Float)
     away_odds = Column(Float)

@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import ChampionshipCard from "./components/ChampionshipCard";
 
 type Championship = {
-  id: number;
+  championshipid: string;
   name: string;
 };
 
@@ -12,11 +12,13 @@ function App() {
   const [championships, setChampionships] = useState<Championship[]>([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/championships")
+    fetch("http://127.0.0.1:8000/championships/")
       .then((response) => response.json())
       .then((data) => setChampionships(data))
       .catch((error) => console.error(error));
   }, []);
+
+  console.log(championships)
 
   return (
     <div className="flex min-h-screen flex-col bg-white">
@@ -31,7 +33,7 @@ function App() {
           <div className="grid gap-4">
             {championships.map((championship) => (
               <ChampionshipCard
-                key={championship.id}
+                key={championship.championshipid}
                 name={championship.name}
               />
             ))}
