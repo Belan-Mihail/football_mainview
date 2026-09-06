@@ -1,48 +1,36 @@
-import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ChampionshipCard from "./components/ChampionshipCard";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-type Championship = {
-  championshipid: string;
-  name: string;
-};
+import HomePage from "./pages/HomePage";
+import ChampionshipPage from "./pages/ChampionshipPage";
+import RoundPage from "./pages/RoundPage";
 
 function App() {
-  const [championships, setChampionships] = useState<Championship[]>([]);
-
-  useEffect(() => {
-    fetch("http://127.0.0.1:8000/championships/")
-      .then((response) => response.json())
-      .then((data) => setChampionships(data))
-      .catch((error) => console.error(error));
-  }, []);
-
-  console.log(championships)
-
   return (
-    <div className="flex min-h-screen flex-col bg-white">
-      <Navbar />
+    <BrowserRouter>
+      <Routes>
 
-      <main className="flex-1">
-        <div className="mx-auto max-w-7xl px-6 py-10">
-          <h2 className="mb-8 text-center text-4xl font-bold text-blue-900">
-            Advanced Football Statistics
-          </h2>
+        <Route
+          path="/"
+          element={<Navigate to="/en" replace />}
+        />
 
-          <div className="grid gap-4">
-            {championships.map((championship) => (
-              <ChampionshipCard
-                key={championship.championshipid}
-                name={championship.name}
-              />
-            ))}
-          </div>
-        </div>
-      </main>
+        <Route
+          path="/:language"
+          element={<HomePage />}
+        />
 
-      <Footer />
-    </div>
+        <Route
+          path="/:language/championship/:slug/round/:season/:round"
+          element={<RoundPage />}
+        />
+
+        <Route
+          path="/:language/championship/:slug/*"
+          element={<ChampionshipPage />}
+        />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

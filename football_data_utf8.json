@@ -1,0 +1,9220 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "championship"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "match"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "matchgoal"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "matchstats"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "round"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "season"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "team"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5n0xnq1l8q80bdiwcm40jp6s1qcexb1y",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyEg3S549O43kGUBqRpISnsy_rtt0oMeZ96beQtP61L82tPspyguQovTbxeIn6nuID6o3pvkVpd5CnJX5EG7vLWYXtfD_Tso1Mu25giUAc4UBhocOavMmGwYMya7RQKIyKA1odOGQVECdApVJmMZkcXnC-_EN-M:1wdRqp:7SfQxIuAs1aFvRo8a4KcCCBbUss8CXtgGnmEqVZSO7g",
+    "expire_date": "2026-07-11T12:09:35.177Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "t3ouuo859gxbipguekq1ywco49rwu41c",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyEg3S549O43kGUBqRpISnsy_rtt0oMeZ96beQtP61L82tPspyguQovTbxeIn6nuID6o3pvkVpd5CnJX5EG7vLWYXtfD_Tso1Mu25giUAc4UBhocOavMmGwYMya7RQKIyKA1odOGQVECdApVJmMZkcXnC-_EN-M:1wirl5:ARAg0kEFB_XQh4bN0C7s5dcvBpfZTH9qjGXXXeC2s6E",
+    "expire_date": "2026-07-26T10:50:03.739Z"
+  }
+},
+{
+  "model": "core.championship",
+  "pk": 1,
+  "fields": {
+    "name": "Premier League",
+    "slug": "premier-league"
+  }
+},
+{
+  "model": "core.championship",
+  "pk": 2,
+  "fields": {
+    "name": "League 1",
+    "slug": "league-1"
+  }
+},
+{
+  "model": "core.championship",
+  "pk": 3,
+  "fields": {
+    "name": "The FA Community Shield",
+    "slug": "fa-community-shield"
+  }
+},
+{
+  "model": "core.championship",
+  "pk": 4,
+  "fields": {
+    "name": "UEFA SuperCup",
+    "slug": "uefa-super-cup"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 1,
+  "fields": {
+    "championship": 1,
+    "name": "Tottenham Hotspur",
+    "short_name": "Tottenham",
+    "code": "TOT",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 2,
+  "fields": {
+    "championship": 1,
+    "name": "Aston Villa",
+    "short_name": "Aston Villa",
+    "code": "AVL",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 3,
+  "fields": {
+    "championship": 1,
+    "name": "Arsenal",
+    "short_name": "Arsenal",
+    "code": "ARS",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 4,
+  "fields": {
+    "championship": 1,
+    "name": "Bournemouth",
+    "short_name": "Bournemouth",
+    "code": "BOU",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 5,
+  "fields": {
+    "championship": 1,
+    "name": "Brentford",
+    "short_name": "Brentford",
+    "code": "BRE",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 6,
+  "fields": {
+    "championship": 1,
+    "name": "Brighton",
+    "short_name": "Brighton",
+    "code": "BHA",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 7,
+  "fields": {
+    "championship": 1,
+    "name": "Burnley",
+    "short_name": "Burnley",
+    "code": "BUR",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 8,
+  "fields": {
+    "championship": 1,
+    "name": "Chelsea",
+    "short_name": "Chelsea",
+    "code": "CHE",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 9,
+  "fields": {
+    "championship": 1,
+    "name": "Crystal Palace",
+    "short_name": "Crystal Palace",
+    "code": "CRY",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 10,
+  "fields": {
+    "championship": 1,
+    "name": "Everton",
+    "short_name": "Everton",
+    "code": "EVE",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 11,
+  "fields": {
+    "championship": 1,
+    "name": "Fulham",
+    "short_name": "Fulham",
+    "code": "FUL",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 12,
+  "fields": {
+    "championship": 1,
+    "name": "Leeds United",
+    "short_name": "Leeds",
+    "code": "LEE",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 13,
+  "fields": {
+    "championship": 1,
+    "name": "Liverpool",
+    "short_name": "Liverpool",
+    "code": "LIV",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 14,
+  "fields": {
+    "championship": 1,
+    "name": "Manchester City",
+    "short_name": "Man City",
+    "code": "MCI",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 15,
+  "fields": {
+    "championship": 1,
+    "name": "Manchester United",
+    "short_name": "Man United",
+    "code": "MUN",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 16,
+  "fields": {
+    "championship": 1,
+    "name": "Newcastle United",
+    "short_name": "Newcastle",
+    "code": "NEW",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 17,
+  "fields": {
+    "championship": 1,
+    "name": "Nottingham Forest",
+    "short_name": "Nottingham",
+    "code": "NFO",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 18,
+  "fields": {
+    "championship": 1,
+    "name": "Sunderland",
+    "short_name": "Sunderland",
+    "code": "SUN",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 19,
+  "fields": {
+    "championship": 1,
+    "name": "West Ham United",
+    "short_name": "West Ham",
+    "code": "WHU",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 20,
+  "fields": {
+    "championship": 1,
+    "name": "Wolverhampton Wanderers",
+    "short_name": "Wolves",
+    "code": "WOL",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 21,
+  "fields": {
+    "championship": 2,
+    "name": "Paris Saint-Germain",
+    "short_name": "PSG",
+    "code": "PSG",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 22,
+  "fields": {
+    "championship": 1,
+    "name": "Ipswich Town",
+    "short_name": "Ipswich",
+    "code": "IPS",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 23,
+  "fields": {
+    "championship": 1,
+    "name": "Coventry City",
+    "short_name": "Coventry",
+    "code": "COV",
+    "status": "active"
+  }
+},
+{
+  "model": "core.team",
+  "pk": 24,
+  "fields": {
+    "championship": 1,
+    "name": "Hull City",
+    "short_name": "Hull",
+    "code": "HUL",
+    "status": "active"
+  }
+},
+{
+  "model": "core.season",
+  "pk": 1,
+  "fields": {
+    "championship": 1,
+    "name": "2025/2026",
+    "status": "active",
+    "teams": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "core.season",
+  "pk": 2,
+  "fields": {
+    "championship": 1,
+    "name": "2026/2027",
+    "status": "active",
+    "teams": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      24
+    ]
+  }
+},
+{
+  "model": "core.season",
+  "pk": 3,
+  "fields": {
+    "championship": 4,
+    "name": "2025/2026",
+    "status": "active",
+    "teams": [
+      2,
+      21
+    ]
+  }
+},
+{
+  "model": "core.season",
+  "pk": 4,
+  "fields": {
+    "championship": 3,
+    "name": "2025/2026",
+    "status": "active",
+    "teams": [
+      3,
+      14
+    ]
+  }
+},
+{
+  "model": "core.round",
+  "pk": 1,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 1,
+    "status": "finished"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 2,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 2,
+    "status": "finished"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 3,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 3,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 4,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 4,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 5,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 5,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 6,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 6,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 7,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 7,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 8,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 8,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 9,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 9,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 10,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 10,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 11,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 11,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 12,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 12,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 13,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 13,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 14,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 14,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 15,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 15,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 16,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 16,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 17,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 17,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 18,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 18,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 19,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 19,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 20,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 20,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 21,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 21,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 22,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 22,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 23,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 23,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 24,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 24,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 25,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 25,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 26,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 26,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 27,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 27,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 28,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 28,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 29,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 29,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 30,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 30,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 31,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 31,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 32,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 32,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 33,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 33,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 34,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 34,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 35,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 35,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 36,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 36,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 37,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 37,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 38,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "number": 38,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.round",
+  "pk": 39,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "number": 1,
+    "status": "scheduled"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 2,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 12,
+    "away_team": 10,
+    "display_name": null,
+    "home_odds": 2.31,
+    "away_odds": 3.34,
+    "odds_date": "2026-07-04T21:15:28.956Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 3,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 15,
+    "away_team": 3,
+    "display_name": null,
+    "home_odds": 3.79,
+    "away_odds": 1.99,
+    "odds_date": "2026-07-04T21:15:28.967Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 4,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 17,
+    "away_team": 5,
+    "display_name": null,
+    "home_odds": 1.94,
+    "away_odds": 4.28,
+    "odds_date": "2026-07-04T21:15:28.976Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 5,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 8,
+    "away_team": 9,
+    "display_name": null,
+    "home_odds": 1.8,
+    "away_odds": 4.66,
+    "odds_date": "2026-07-04T21:15:28.987Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 6,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 20,
+    "away_team": 14,
+    "display_name": null,
+    "home_odds": 6.7,
+    "away_odds": 1.54,
+    "odds_date": "2026-07-04T21:15:28.996Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 7,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 6,
+    "away_team": 11,
+    "display_name": null,
+    "home_odds": 1.84,
+    "away_odds": 4.44,
+    "odds_date": "2026-07-04T21:15:29.011Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 8,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 18,
+    "away_team": 19,
+    "display_name": null,
+    "home_odds": 3.57,
+    "away_odds": 2.25,
+    "odds_date": "2026-07-04T21:15:29.023Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 9,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 1,
+    "away_team": 7,
+    "display_name": null,
+    "home_odds": 1.6,
+    "away_odds": 6.44,
+    "odds_date": "2026-07-04T21:15:29.032Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 10,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 2,
+    "away_team": 16,
+    "display_name": null,
+    "home_odds": 2.44,
+    "away_odds": 2.93,
+    "odds_date": "2026-07-04T21:15:29.041Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 11,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 1,
+    "home_team": 13,
+    "away_team": 4,
+    "display_name": null,
+    "home_odds": 1.31,
+    "away_odds": 9.15,
+    "odds_date": "2026-07-04T21:15:29.051Z",
+    "status": "finished",
+    "match_date": "2025-08-15T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 12,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 19,
+    "away_team": 8,
+    "display_name": null,
+    "home_odds": 4.86,
+    "away_odds": 1.74,
+    "odds_date": "2026-07-04T21:15:29.062Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 13,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 14,
+    "away_team": 1,
+    "display_name": null,
+    "home_odds": 1.6,
+    "away_odds": 5.43,
+    "odds_date": "2026-07-04T21:15:29.078Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 14,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 4,
+    "away_team": 20,
+    "display_name": null,
+    "home_odds": 1.84,
+    "away_odds": 4.44,
+    "odds_date": "2026-07-04T21:15:29.094Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 15,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 5,
+    "away_team": 2,
+    "display_name": null,
+    "home_odds": 3.3,
+    "away_odds": 2.26,
+    "odds_date": "2026-07-04T21:15:29.105Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 16,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 7,
+    "away_team": 18,
+    "display_name": null,
+    "home_odds": 2.4,
+    "away_odds": 3.37,
+    "odds_date": "2026-07-04T21:15:29.114Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 17,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 9,
+    "away_team": 17,
+    "display_name": null,
+    "home_odds": 2.41,
+    "away_odds": 3.17,
+    "odds_date": "2026-07-04T21:15:29.122Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 18,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 10,
+    "away_team": 6,
+    "display_name": null,
+    "home_odds": 2.95,
+    "away_odds": 2.52,
+    "odds_date": "2026-07-04T21:15:29.131Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 19,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 11,
+    "away_team": 15,
+    "display_name": null,
+    "home_odds": 3.68,
+    "away_odds": 2.04,
+    "odds_date": "2026-07-04T21:15:29.141Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 20,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 16,
+    "away_team": 13,
+    "display_name": null,
+    "home_odds": 3.1,
+    "away_odds": 2.25,
+    "odds_date": "2026-07-04T21:15:29.150Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 21,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 2,
+    "home_team": 3,
+    "away_team": 12,
+    "display_name": null,
+    "home_odds": 1.36,
+    "away_odds": 8.65,
+    "odds_date": "2026-07-04T21:15:29.158Z",
+    "status": "finished",
+    "match_date": "2025-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 22,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 2,
+    "away_team": 9,
+    "display_name": null,
+    "home_odds": 2.13,
+    "away_odds": 3.35,
+    "odds_date": "2026-07-04T21:15:29.169Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 23,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 8,
+    "away_team": 11,
+    "display_name": null,
+    "home_odds": 1.67,
+    "away_odds": 5.18,
+    "odds_date": "2026-07-04T21:15:29.177Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 24,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 12,
+    "away_team": 16,
+    "display_name": null,
+    "home_odds": 4.14,
+    "away_odds": 1.97,
+    "odds_date": "2026-07-04T21:15:29.204Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 25,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 13,
+    "away_team": 3,
+    "display_name": null,
+    "home_odds": 2.43,
+    "away_odds": 3.19,
+    "odds_date": "2026-07-04T21:15:29.212Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 26,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 15,
+    "away_team": 7,
+    "display_name": null,
+    "home_odds": 1.39,
+    "away_odds": 7.55,
+    "odds_date": "2026-07-04T21:15:29.221Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 27,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 17,
+    "away_team": 19,
+    "display_name": null,
+    "home_odds": 1.68,
+    "away_odds": 5.07,
+    "odds_date": "2026-07-04T21:15:29.230Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 28,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 18,
+    "away_team": 5,
+    "display_name": null,
+    "home_odds": 3.13,
+    "away_odds": 2.37,
+    "odds_date": "2026-07-04T21:15:29.239Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 29,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 1,
+    "away_team": 4,
+    "display_name": null,
+    "home_odds": 1.94,
+    "away_odds": 3.81,
+    "odds_date": "2026-07-04T21:15:29.248Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 30,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 20,
+    "away_team": 10,
+    "display_name": null,
+    "home_odds": 3.43,
+    "away_odds": 2.27,
+    "odds_date": "2026-07-04T21:15:29.256Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 31,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 3,
+    "home_team": 6,
+    "away_team": 14,
+    "display_name": null,
+    "home_odds": 3.76,
+    "away_odds": 2.0,
+    "odds_date": "2026-07-04T21:15:29.277Z",
+    "status": "scheduled",
+    "match_date": "2025-08-30T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 32,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 3,
+    "away_team": 17,
+    "display_name": null,
+    "home_odds": 1.42,
+    "away_odds": 7.62,
+    "odds_date": "2026-07-04T21:15:29.292Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 33,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 4,
+    "away_team": 6,
+    "display_name": null,
+    "home_odds": 2.47,
+    "away_odds": 2.83,
+    "odds_date": "2026-07-04T21:15:29.310Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 34,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 5,
+    "away_team": 8,
+    "display_name": null,
+    "home_odds": 4.61,
+    "away_odds": 1.78,
+    "odds_date": "2026-07-04T21:15:29.328Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 35,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 7,
+    "away_team": 13,
+    "display_name": null,
+    "home_odds": 9.59,
+    "away_odds": 1.3,
+    "odds_date": "2026-07-04T21:15:29.343Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 36,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 9,
+    "away_team": 18,
+    "display_name": null,
+    "home_odds": 1.7,
+    "away_odds": 5.59,
+    "odds_date": "2026-07-04T21:15:29.356Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 37,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 10,
+    "away_team": 2,
+    "display_name": null,
+    "home_odds": 2.72,
+    "away_odds": 2.83,
+    "odds_date": "2026-07-04T21:15:29.365Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 38,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 11,
+    "away_team": 12,
+    "display_name": null,
+    "home_odds": 2.07,
+    "away_odds": 3.74,
+    "odds_date": "2026-07-04T21:15:29.390Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 39,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 14,
+    "away_team": 15,
+    "display_name": null,
+    "home_odds": 1.7,
+    "away_odds": 4.58,
+    "odds_date": "2026-07-04T21:15:29.402Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 40,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 16,
+    "away_team": 20,
+    "display_name": null,
+    "home_odds": 1.34,
+    "away_odds": 9.09,
+    "odds_date": "2026-07-04T21:15:29.416Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 41,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 4,
+    "home_team": 19,
+    "away_team": 1,
+    "display_name": null,
+    "home_odds": 3.48,
+    "away_odds": 2.12,
+    "odds_date": "2026-07-04T21:15:29.432Z",
+    "status": "scheduled",
+    "match_date": "2025-09-13T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 42,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 13,
+    "away_team": 10,
+    "display_name": null,
+    "home_odds": 1.52,
+    "away_odds": 6.75,
+    "odds_date": "2026-07-04T21:15:29.448Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 43,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 6,
+    "away_team": 1,
+    "display_name": null,
+    "home_odds": 2.26,
+    "away_odds": 3.15,
+    "odds_date": "2026-07-04T21:15:29.458Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 44,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 7,
+    "away_team": 17,
+    "display_name": null,
+    "home_odds": 3.33,
+    "away_odds": 2.3,
+    "odds_date": "2026-07-04T21:15:29.472Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 45,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 19,
+    "away_team": 9,
+    "display_name": null,
+    "home_odds": 3.06,
+    "away_odds": 2.4,
+    "odds_date": "2026-07-04T21:15:29.482Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 46,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 20,
+    "away_team": 12,
+    "display_name": null,
+    "home_odds": 3.05,
+    "away_odds": 2.59,
+    "odds_date": "2026-07-04T21:15:29.494Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 47,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 15,
+    "away_team": 8,
+    "display_name": null,
+    "home_odds": 2.78,
+    "away_odds": 2.42,
+    "odds_date": "2026-07-04T21:15:29.503Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 48,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 11,
+    "away_team": 5,
+    "display_name": null,
+    "home_odds": 2.17,
+    "away_odds": 3.71,
+    "odds_date": "2026-07-04T21:15:29.512Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 49,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 4,
+    "away_team": 16,
+    "display_name": null,
+    "home_odds": 2.59,
+    "away_odds": 3.0,
+    "odds_date": "2026-07-04T21:15:29.523Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 50,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 18,
+    "away_team": 2,
+    "display_name": null,
+    "home_odds": 3.97,
+    "away_odds": 2.04,
+    "odds_date": "2026-07-04T21:15:29.531Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 51,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 5,
+    "home_team": 3,
+    "away_team": 14,
+    "display_name": null,
+    "home_odds": 2.15,
+    "away_odds": 3.4,
+    "odds_date": "2026-07-04T21:15:29.542Z",
+    "status": "scheduled",
+    "match_date": "2025-09-20T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 52,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 2,
+    "away_team": 11,
+    "display_name": null,
+    "home_odds": 2.25,
+    "away_odds": 3.47,
+    "odds_date": "2026-07-04T21:15:29.551Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 53,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 5,
+    "away_team": 15,
+    "display_name": null,
+    "home_odds": 3.56,
+    "away_odds": 2.04,
+    "odds_date": "2026-07-04T21:15:29.559Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 54,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 9,
+    "away_team": 13,
+    "display_name": null,
+    "home_odds": 4.53,
+    "away_odds": 1.86,
+    "odds_date": "2026-07-04T21:15:29.568Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 55,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 12,
+    "away_team": 4,
+    "display_name": null,
+    "home_odds": 3.06,
+    "away_odds": 2.5,
+    "odds_date": "2026-07-04T21:15:29.578Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 56,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 14,
+    "away_team": 7,
+    "display_name": null,
+    "home_odds": 1.18,
+    "away_odds": 16.1,
+    "odds_date": "2026-07-04T21:15:29.586Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 57,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 16,
+    "away_team": 3,
+    "display_name": null,
+    "home_odds": 3.61,
+    "away_odds": 2.17,
+    "odds_date": "2026-07-04T21:15:29.603Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 58,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 17,
+    "away_team": 18,
+    "display_name": null,
+    "home_odds": 1.77,
+    "away_odds": 4.81,
+    "odds_date": "2026-07-04T21:15:29.612Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 59,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 1,
+    "away_team": 20,
+    "display_name": null,
+    "home_odds": 1.54,
+    "away_odds": 6.67,
+    "odds_date": "2026-07-04T21:15:29.629Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 60,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 10,
+    "away_team": 19,
+    "display_name": null,
+    "home_odds": 1.63,
+    "away_odds": 6.0,
+    "odds_date": "2026-07-04T21:15:29.638Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 61,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 6,
+    "home_team": 8,
+    "away_team": 6,
+    "display_name": null,
+    "home_odds": 1.98,
+    "away_odds": 3.78,
+    "odds_date": "2026-07-04T21:15:29.646Z",
+    "status": "scheduled",
+    "match_date": "2025-09-27T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 62,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 4,
+    "away_team": 11,
+    "display_name": null,
+    "home_odds": 1.99,
+    "away_odds": 4.18,
+    "odds_date": "2026-07-04T21:15:29.655Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 63,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 12,
+    "away_team": 1,
+    "display_name": null,
+    "home_odds": 2.9,
+    "away_odds": 2.52,
+    "odds_date": "2026-07-04T21:15:29.666Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 64,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 3,
+    "away_team": 19,
+    "display_name": null,
+    "home_odds": 1.19,
+    "away_odds": 14.7,
+    "odds_date": "2026-07-04T21:15:29.685Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 65,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 15,
+    "away_team": 18,
+    "display_name": null,
+    "home_odds": 1.66,
+    "away_odds": 4.89,
+    "odds_date": "2026-07-04T21:15:29.695Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 66,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 8,
+    "away_team": 13,
+    "display_name": null,
+    "home_odds": 3.09,
+    "away_odds": 2.26,
+    "odds_date": "2026-07-04T21:15:29.705Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 67,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 10,
+    "away_team": 9,
+    "display_name": null,
+    "home_odds": 2.66,
+    "away_odds": 2.86,
+    "odds_date": "2026-07-04T21:15:29.713Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 68,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 2,
+    "away_team": 7,
+    "display_name": null,
+    "home_odds": 1.57,
+    "away_odds": 6.4,
+    "odds_date": "2026-07-04T21:15:29.722Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 69,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 16,
+    "away_team": 17,
+    "display_name": null,
+    "home_odds": 1.54,
+    "away_odds": 6.14,
+    "odds_date": "2026-07-04T21:15:29.730Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 70,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 20,
+    "away_team": 6,
+    "display_name": null,
+    "home_odds": 3.57,
+    "away_odds": 2.09,
+    "odds_date": "2026-07-04T21:15:29.742Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 71,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 7,
+    "home_team": 5,
+    "away_team": 14,
+    "display_name": null,
+    "home_odds": 5.18,
+    "away_odds": 1.64,
+    "odds_date": "2026-07-04T21:15:29.752Z",
+    "status": "scheduled",
+    "match_date": "2025-10-04T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 72,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 17,
+    "away_team": 8,
+    "display_name": null,
+    "home_odds": 3.37,
+    "away_odds": 2.2,
+    "odds_date": "2026-07-04T21:15:29.762Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 73,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 6,
+    "away_team": 16,
+    "display_name": null,
+    "home_odds": 2.95,
+    "away_odds": 2.42,
+    "odds_date": "2026-07-04T21:15:29.770Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 74,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 7,
+    "away_team": 12,
+    "display_name": null,
+    "home_odds": 3.52,
+    "away_odds": 2.38,
+    "odds_date": "2026-07-04T21:15:29.782Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 75,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 19,
+    "away_team": 5,
+    "display_name": null,
+    "home_odds": 2.87,
+    "away_odds": 2.62,
+    "odds_date": "2026-07-04T21:15:29.794Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 76,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 11,
+    "away_team": 3,
+    "display_name": null,
+    "home_odds": 6.98,
+    "away_odds": 1.51,
+    "odds_date": "2026-07-04T21:15:29.806Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 77,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 13,
+    "away_team": 15,
+    "display_name": null,
+    "home_odds": 1.68,
+    "away_odds": 4.7,
+    "odds_date": "2026-07-04T21:15:29.815Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 78,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 9,
+    "away_team": 4,
+    "display_name": null,
+    "home_odds": 2.2,
+    "away_odds": 3.58,
+    "odds_date": "2026-07-04T21:15:29.826Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 79,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 14,
+    "away_team": 10,
+    "display_name": null,
+    "home_odds": 1.45,
+    "away_odds": 8.68,
+    "odds_date": "2026-07-04T21:15:29.841Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 80,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 18,
+    "away_team": 20,
+    "display_name": null,
+    "home_odds": 2.58,
+    "away_odds": 3.1,
+    "odds_date": "2026-07-04T21:15:29.856Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 81,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 8,
+    "home_team": 1,
+    "away_team": 2,
+    "display_name": null,
+    "home_odds": 2.15,
+    "away_odds": 3.54,
+    "odds_date": "2026-07-04T21:15:29.864Z",
+    "status": "scheduled",
+    "match_date": "2025-10-18T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 82,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 12,
+    "away_team": 19,
+    "display_name": null,
+    "home_odds": 1.83,
+    "away_odds": 4.57,
+    "odds_date": "2026-07-04T21:15:29.877Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 83,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 8,
+    "away_team": 18,
+    "display_name": null,
+    "home_odds": 1.49,
+    "away_odds": 7.16,
+    "odds_date": "2026-07-04T21:15:29.891Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 84,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 16,
+    "away_team": 11,
+    "display_name": null,
+    "home_odds": 1.64,
+    "away_odds": 5.57,
+    "odds_date": "2026-07-04T21:15:29.903Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 85,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 15,
+    "away_team": 6,
+    "display_name": null,
+    "home_odds": 1.97,
+    "away_odds": 3.71,
+    "odds_date": "2026-07-04T21:15:29.914Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 86,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 5,
+    "away_team": 13,
+    "display_name": null,
+    "home_odds": 4.23,
+    "away_odds": 1.82,
+    "odds_date": "2026-07-04T21:15:29.928Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 87,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 3,
+    "away_team": 9,
+    "display_name": null,
+    "home_odds": 1.44,
+    "away_odds": 7.18,
+    "odds_date": "2026-07-04T21:15:29.946Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 88,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 2,
+    "away_team": 14,
+    "display_name": null,
+    "home_odds": 4.5,
+    "away_odds": 1.82,
+    "odds_date": "2026-07-04T21:15:29.959Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 89,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 4,
+    "away_team": 17,
+    "display_name": null,
+    "home_odds": 1.94,
+    "away_odds": 3.97,
+    "odds_date": "2026-07-04T21:15:29.977Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 90,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 20,
+    "away_team": 7,
+    "display_name": null,
+    "home_odds": 1.96,
+    "away_odds": 4.44,
+    "odds_date": "2026-07-04T21:15:29.992Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 91,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 9,
+    "home_team": 10,
+    "away_team": 1,
+    "display_name": null,
+    "home_odds": 2.31,
+    "away_odds": 3.15,
+    "odds_date": "2026-07-04T21:15:30.005Z",
+    "status": "scheduled",
+    "match_date": "2025-10-25T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 92,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 11,
+    "away_team": 20,
+    "display_name": null,
+    "home_odds": 1.83,
+    "away_odds": 4.57,
+    "odds_date": "2026-07-04T21:15:30.014Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 93,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 7,
+    "away_team": 3,
+    "display_name": null,
+    "home_odds": 13.6,
+    "away_odds": 1.25,
+    "odds_date": "2026-07-04T21:15:30.031Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 94,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 6,
+    "away_team": 12,
+    "display_name": null,
+    "home_odds": 1.96,
+    "away_odds": 4.0,
+    "odds_date": "2026-07-04T21:15:30.072Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 95,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 17,
+    "away_team": 15,
+    "display_name": null,
+    "home_odds": 3.34,
+    "away_odds": 2.12,
+    "odds_date": "2026-07-04T21:15:30.080Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 96,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 9,
+    "away_team": 5,
+    "display_name": null,
+    "home_odds": 2.12,
+    "away_odds": 3.62,
+    "odds_date": "2026-07-04T21:15:30.090Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 97,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 13,
+    "away_team": 2,
+    "display_name": null,
+    "home_odds": 1.68,
+    "away_odds": 4.68,
+    "odds_date": "2026-07-04T21:15:30.098Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 98,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 14,
+    "away_team": 4,
+    "display_name": null,
+    "home_odds": 1.46,
+    "away_odds": 6.67,
+    "odds_date": "2026-07-04T21:15:30.131Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 99,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 18,
+    "away_team": 10,
+    "display_name": null,
+    "home_odds": 3.26,
+    "away_odds": 2.48,
+    "odds_date": "2026-07-04T21:15:30.146Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 100,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 1,
+    "away_team": 8,
+    "display_name": null,
+    "home_odds": 3.34,
+    "away_odds": 2.22,
+    "odds_date": "2026-07-04T21:15:30.166Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 101,
+  "fields": {
+    "championship": 1,
+    "season": 1,
+    "round": 10,
+    "home_team": 19,
+    "away_team": 16,
+    "display_name": null,
+    "home_odds": 4.86,
+    "away_odds": 1.69,
+    "odds_date": "2026-07-04T21:15:30.179Z",
+    "status": "scheduled",
+    "match_date": "2025-11-01T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 102,
+  "fields": {
+    "championship": 4,
+    "season": 3,
+    "round": null,
+    "home_team": 21,
+    "away_team": 2,
+    "display_name": null,
+    "home_odds": 1.58,
+    "away_odds": 6.26,
+    "odds_date": "2026-08-19T09:09:25.961Z",
+    "status": "finished",
+    "match_date": "2026-08-12T21:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 103,
+  "fields": {
+    "championship": 3,
+    "season": 4,
+    "round": null,
+    "home_team": 3,
+    "away_team": 14,
+    "display_name": null,
+    "home_odds": 2.89,
+    "away_odds": 2.48,
+    "odds_date": "2026-08-19T09:44:58.040Z",
+    "status": "finished",
+    "match_date": "2026-08-16T16:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 104,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 3,
+    "away_team": 23,
+    "display_name": null,
+    "home_odds": 1.21,
+    "away_odds": 16.0,
+    "odds_date": "2026-08-19T09:54:26.174Z",
+    "status": "scheduled",
+    "match_date": "2026-08-21T21:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 105,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 24,
+    "away_team": 15,
+    "display_name": null,
+    "home_odds": 8.8,
+    "away_odds": 1.41,
+    "odds_date": "2026-08-19T09:57:11.717Z",
+    "status": "scheduled",
+    "match_date": "2026-08-22T13:30:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 106,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 10,
+    "away_team": 9,
+    "display_name": null,
+    "home_odds": 2.25,
+    "away_odds": 3.5,
+    "odds_date": "2026-08-19T12:17:49.981Z",
+    "status": "scheduled",
+    "match_date": "2026-08-22T16:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 107,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 22,
+    "away_team": 18,
+    "display_name": null,
+    "home_odds": 2.83,
+    "away_odds": 2.72,
+    "odds_date": "2026-08-19T12:19:27.758Z",
+    "status": "scheduled",
+    "match_date": "2026-08-22T16:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 108,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 17,
+    "away_team": 12,
+    "display_name": null,
+    "home_odds": 2.34,
+    "away_odds": 3.31,
+    "odds_date": "2026-08-19T12:20:49.023Z",
+    "status": "scheduled",
+    "match_date": "2026-08-22T16:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 109,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 5,
+    "away_team": 1,
+    "display_name": null,
+    "home_odds": 2.54,
+    "away_odds": 2.84,
+    "odds_date": "2026-08-19T14:48:03.336Z",
+    "status": "scheduled",
+    "match_date": "2026-08-22T18:30:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 110,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 6,
+    "away_team": 2,
+    "display_name": null,
+    "home_odds": 2.28,
+    "away_odds": 3.25,
+    "odds_date": "2026-08-19T14:49:47.031Z",
+    "status": "scheduled",
+    "match_date": "2026-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 111,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 14,
+    "away_team": 4,
+    "display_name": null,
+    "home_odds": 1.51,
+    "away_odds": 6.25,
+    "odds_date": "2026-08-19T14:51:52.596Z",
+    "status": "scheduled",
+    "match_date": "2026-08-23T15:00:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 112,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 16,
+    "away_team": 13,
+    "display_name": null,
+    "home_odds": 3.76,
+    "away_odds": 1.99,
+    "odds_date": "2026-08-19T14:53:15.631Z",
+    "status": "scheduled",
+    "match_date": "2026-08-23T17:30:00Z"
+  }
+},
+{
+  "model": "core.match",
+  "pk": 113,
+  "fields": {
+    "championship": 1,
+    "season": 2,
+    "round": 39,
+    "home_team": 11,
+    "away_team": 8,
+    "display_name": null,
+    "home_odds": 3.88,
+    "away_odds": 1.7,
+    "odds_date": "2026-08-19T14:54:29.415Z",
+    "status": "scheduled",
+    "match_date": "2026-08-24T21:00:00Z"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 1,
+  "fields": {
+    "match": 2,
+    "home_corners": 7,
+    "away_corners": 2,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 21,
+    "away_shots": 7,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 1,
+    "home_xg": "2.38",
+    "away_xg": "0.67"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 2,
+  "fields": {
+    "match": 3,
+    "home_corners": 3,
+    "away_corners": 4,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 22,
+    "away_shots": 9,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 3,
+    "home_xg": "1.38",
+    "away_xg": "1.33"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 3,
+  "fields": {
+    "match": 4,
+    "home_corners": 5,
+    "away_corners": 5,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 11,
+    "away_shots": 10,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 3,
+    "home_xg": "1.76",
+    "away_xg": "1.33"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 4,
+  "fields": {
+    "match": 5,
+    "home_corners": 11,
+    "away_corners": 2,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 19,
+    "away_shots": 12,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 4,
+    "home_xg": "1.37",
+    "away_xg": "1.03"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 5,
+  "fields": {
+    "match": 6,
+    "home_corners": 4,
+    "away_corners": 5,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 9,
+    "away_shots": 15,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 4,
+    "home_xg": "0.47",
+    "away_xg": "2.31"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 6,
+  "fields": {
+    "match": 7,
+    "home_corners": 4,
+    "away_corners": 3,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 10,
+    "away_shots": 7,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 2,
+    "home_xg": "1.44",
+    "away_xg": "0.90"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 7,
+  "fields": {
+    "match": 8,
+    "home_corners": 5,
+    "away_corners": 7,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 10,
+    "away_shots": 12,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 4,
+    "home_xg": "0.72",
+    "away_xg": "0.56"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 8,
+  "fields": {
+    "match": 9,
+    "home_corners": 6,
+    "away_corners": 5,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 16,
+    "away_shots": 14,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 4,
+    "home_xg": "1.98",
+    "away_xg": "0.73"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 9,
+  "fields": {
+    "match": 10,
+    "home_corners": 3,
+    "away_corners": 6,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 1,
+    "away_red_cards": 0,
+    "home_shots": 3,
+    "away_shots": 16,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 3,
+    "home_xg": "0.32",
+    "away_xg": "1.40"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 10,
+  "fields": {
+    "match": 11,
+    "home_corners": 6,
+    "away_corners": 7,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 19,
+    "away_shots": 10,
+    "home_shots_on_target": 10,
+    "away_shots_on_target": 3,
+    "home_xg": "2.38",
+    "away_xg": "1.57"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 11,
+  "fields": {
+    "match": 12,
+    "home_corners": 7,
+    "away_corners": 5,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 12,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 7,
+    "home_xg": "0.98",
+    "away_xg": "3.95"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 12,
+  "fields": {
+    "match": 13,
+    "home_corners": 7,
+    "away_corners": 2,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 10,
+    "away_shots": 12,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 5,
+    "home_xg": "1.25",
+    "away_xg": "1.28"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 13,
+  "fields": {
+    "match": 14,
+    "home_corners": 8,
+    "away_corners": 3,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 1,
+    "home_shots": 14,
+    "away_shots": 6,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 1,
+    "home_xg": "1.78",
+    "away_xg": "0.37"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 14,
+  "fields": {
+    "match": 15,
+    "home_corners": 2,
+    "away_corners": 9,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 1,
+    "home_shots": 9,
+    "away_shots": 17,
+    "home_shots_on_target": 2,
+    "away_shots_on_target": 2,
+    "home_xg": "1.13",
+    "away_xg": "0.98"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 15,
+  "fields": {
+    "match": 16,
+    "home_corners": 4,
+    "away_corners": 3,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 7,
+    "away_shots": 9,
+    "home_shots_on_target": 2,
+    "away_shots_on_target": 1,
+    "home_xg": "1.00",
+    "away_xg": "1.12"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 16,
+  "fields": {
+    "match": 17,
+    "home_corners": 1,
+    "away_corners": 3,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 8,
+    "away_shots": 9,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 1,
+    "home_xg": "1.10",
+    "away_xg": "1.33"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 17,
+  "fields": {
+    "match": 18,
+    "home_corners": 2,
+    "away_corners": 2,
+    "home_yellow_cards": 4,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 11,
+    "away_shots": 13,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 4,
+    "home_xg": "1.80",
+    "away_xg": "2.08"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 18,
+  "fields": {
+    "match": 19,
+    "home_corners": 9,
+    "away_corners": 6,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 10,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 3,
+    "home_xg": "1.65",
+    "away_xg": "1.55"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 19,
+  "fields": {
+    "match": 20,
+    "home_corners": 7,
+    "away_corners": 1,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 3,
+    "home_red_cards": 1,
+    "away_red_cards": 0,
+    "home_shots": 10,
+    "away_shots": 5,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 4,
+    "home_xg": "1.96",
+    "away_xg": "0.65"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 20,
+  "fields": {
+    "match": 21,
+    "home_corners": 2,
+    "away_corners": 2,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 18,
+    "away_shots": 3,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 1,
+    "home_xg": "2.74",
+    "away_xg": "0.16"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 21,
+  "fields": {
+    "match": 22,
+    "home_corners": 10,
+    "away_corners": 1,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 6,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 4,
+    "home_xg": "1.21",
+    "away_xg": "2.60"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 22,
+  "fields": {
+    "match": 23,
+    "home_corners": 6,
+    "away_corners": 4,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 11,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 3,
+    "home_xg": "2.43",
+    "away_xg": "0.74"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 23,
+  "fields": {
+    "match": 24,
+    "home_corners": 5,
+    "away_corners": 5,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 10,
+    "away_shots": 8,
+    "home_shots_on_target": 1,
+    "away_shots_on_target": 2,
+    "home_xg": "0.68",
+    "away_xg": "0.30"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 24,
+  "fields": {
+    "match": 25,
+    "home_corners": 3,
+    "away_corners": 8,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 9,
+    "away_shots": 11,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 1,
+    "home_xg": "0.48",
+    "away_xg": "0.49"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 25,
+  "fields": {
+    "match": 26,
+    "home_corners": 7,
+    "away_corners": 1,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 5,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 26,
+    "away_shots": 6,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 3,
+    "home_xg": "4.02",
+    "away_xg": "1.33"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 26,
+  "fields": {
+    "match": 27,
+    "home_corners": 9,
+    "away_corners": 7,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 11,
+    "away_shots": 12,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 8,
+    "home_xg": "0.72",
+    "away_xg": "2.24"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 27,
+  "fields": {
+    "match": 28,
+    "home_corners": 3,
+    "away_corners": 4,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 7,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 4,
+    "home_xg": "1.57",
+    "away_xg": "1.45"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 28,
+  "fields": {
+    "match": 29,
+    "home_corners": 0,
+    "away_corners": 8,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 5,
+    "away_shots": 19,
+    "home_shots_on_target": 1,
+    "away_shots_on_target": 6,
+    "home_xg": "0.17",
+    "away_xg": "2.12"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 29,
+  "fields": {
+    "match": 30,
+    "home_corners": 2,
+    "away_corners": 2,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 10,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 4,
+    "home_xg": "0.94",
+    "away_xg": "2.04"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 30,
+  "fields": {
+    "match": 31,
+    "home_corners": 3,
+    "away_corners": 2,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 12,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 3,
+    "home_xg": "2.21",
+    "away_xg": "2.13"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 31,
+  "fields": {
+    "match": 32,
+    "home_corners": 8,
+    "away_corners": 3,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 16,
+    "away_shots": 5,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 1,
+    "home_xg": "2.88",
+    "away_xg": "0.29"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 32,
+  "fields": {
+    "match": 33,
+    "home_corners": 4,
+    "away_corners": 4,
+    "home_yellow_cards": 4,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 6,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 2,
+    "home_xg": "1.44",
+    "away_xg": "0.62"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 33,
+  "fields": {
+    "match": 34,
+    "home_corners": 5,
+    "away_corners": 6,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 7,
+    "away_shots": 16,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 6,
+    "home_xg": "1.18",
+    "away_xg": "0.76"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 34,
+  "fields": {
+    "match": 35,
+    "home_corners": 1,
+    "away_corners": 13,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 1,
+    "away_red_cards": 0,
+    "home_shots": 3,
+    "away_shots": 27,
+    "home_shots_on_target": 0,
+    "away_shots_on_target": 4,
+    "home_xg": "0.17",
+    "away_xg": "2.79"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 35,
+  "fields": {
+    "match": 36,
+    "home_corners": 5,
+    "away_corners": 3,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 14,
+    "away_shots": 6,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 0,
+    "home_xg": "1.76",
+    "away_xg": "0.35"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 36,
+  "fields": {
+    "match": 37,
+    "home_corners": 10,
+    "away_corners": 3,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 20,
+    "away_shots": 6,
+    "home_shots_on_target": 2,
+    "away_shots_on_target": 1,
+    "home_xg": "1.89",
+    "away_xg": "0.35"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 37,
+  "fields": {
+    "match": 38,
+    "home_corners": 3,
+    "away_corners": 3,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 2,
+    "home_red_cards": 5,
+    "away_red_cards": 10,
+    "home_shots": 3,
+    "away_shots": 2,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 3,
+    "home_xg": "1.14",
+    "away_xg": "0.83"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 38,
+  "fields": {
+    "match": 39,
+    "home_corners": 2,
+    "away_corners": 4,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 12,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 2,
+    "home_xg": "2.00",
+    "away_xg": "1.52"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 39,
+  "fields": {
+    "match": 40,
+    "home_corners": 7,
+    "away_corners": 3,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 16,
+    "away_shots": 6,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 3,
+    "home_xg": "1.19",
+    "away_xg": "0.38"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 40,
+  "fields": {
+    "match": 41,
+    "home_corners": 2,
+    "away_corners": 13,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 1,
+    "home_red_cards": 1,
+    "away_red_cards": 0,
+    "home_shots": 7,
+    "away_shots": 14,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 5,
+    "home_xg": "0.79",
+    "away_xg": "1.51"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 41,
+  "fields": {
+    "match": 42,
+    "home_corners": 5,
+    "away_corners": 4,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 11,
+    "away_shots": 9,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 2,
+    "home_xg": "1.06",
+    "away_xg": "0.72"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 42,
+  "fields": {
+    "match": 43,
+    "home_corners": 2,
+    "away_corners": 10,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 11,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 3,
+    "home_xg": "1.40",
+    "away_xg": "1.19"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 43,
+  "fields": {
+    "match": 44,
+    "home_corners": 4,
+    "away_corners": 5,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 17,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 8,
+    "home_xg": "1.14",
+    "away_xg": "0.83"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 44,
+  "fields": {
+    "match": 45,
+    "home_corners": 8,
+    "away_corners": 8,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 8,
+    "away_shots": 18,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 3,
+    "home_xg": "0.47",
+    "away_xg": "2.34"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 45,
+  "fields": {
+    "match": 46,
+    "home_corners": 4,
+    "away_corners": 0,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 16,
+    "away_shots": 6,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 4,
+    "home_xg": "1.57",
+    "away_xg": "0.46"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 46,
+  "fields": {
+    "match": 47,
+    "home_corners": 5,
+    "away_corners": 5,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 5,
+    "home_red_cards": 1,
+    "away_red_cards": 1,
+    "home_shots": 11,
+    "away_shots": 5,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 1,
+    "home_xg": "1.34",
+    "away_xg": "0.47"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 47,
+  "fields": {
+    "match": 48,
+    "home_corners": 2,
+    "away_corners": 10,
+    "home_yellow_cards": 4,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 14,
+    "away_shots": 8,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 3,
+    "home_xg": "1.52",
+    "away_xg": "0.83"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 48,
+  "fields": {
+    "match": 49,
+    "home_corners": 5,
+    "away_corners": 2,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 11,
+    "away_shots": 4,
+    "home_shots_on_target": 2,
+    "away_shots_on_target": 1,
+    "home_xg": "0.55",
+    "away_xg": "0.15"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 49,
+  "fields": {
+    "match": 50,
+    "home_corners": 6,
+    "away_corners": 5,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 1,
+    "away_red_cards": 0,
+    "home_shots": 14,
+    "away_shots": 12,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 2,
+    "home_xg": "0.94",
+    "away_xg": "0.94"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 50,
+  "fields": {
+    "match": 51,
+    "home_corners": 11,
+    "away_corners": 1,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 5,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 3,
+    "home_xg": "0.72",
+    "away_xg": "1.12"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 51,
+  "fields": {
+    "match": 52,
+    "home_corners": 2,
+    "away_corners": 8,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 9,
+    "away_shots": 11,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 4,
+    "home_xg": "1.37",
+    "away_xg": "0.95"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 52,
+  "fields": {
+    "match": 53,
+    "home_corners": 4,
+    "away_corners": 2,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 10,
+    "away_shots": 14,
+    "home_shots_on_target": 8,
+    "away_shots_on_target": 6,
+    "home_xg": "2.79",
+    "away_xg": "2.24"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 53,
+  "fields": {
+    "match": 54,
+    "home_corners": 2,
+    "away_corners": 6,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 16,
+    "away_shots": 20,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 4,
+    "home_xg": "3.53",
+    "away_xg": "3.10"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 54,
+  "fields": {
+    "match": 55,
+    "home_corners": 7,
+    "away_corners": 4,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 19,
+    "away_shots": 12,
+    "home_shots_on_target": 8,
+    "away_shots_on_target": 5,
+    "home_xg": "2.05",
+    "away_xg": "1.06"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 55,
+  "fields": {
+    "match": 56,
+    "home_corners": 10,
+    "away_corners": 2,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 21,
+    "away_shots": 9,
+    "home_shots_on_target": 8,
+    "away_shots_on_target": 2,
+    "home_xg": "3.22",
+    "away_xg": "0.51"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 56,
+  "fields": {
+    "match": 57,
+    "home_corners": 7,
+    "away_corners": 12,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 8,
+    "away_shots": 20,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 7,
+    "home_xg": "0.74",
+    "away_xg": "2.07"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 57,
+  "fields": {
+    "match": 58,
+    "home_corners": 7,
+    "away_corners": 4,
+    "home_yellow_cards": 4,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 22,
+    "away_shots": 11,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 3,
+    "home_xg": "1.42",
+    "away_xg": "1.94"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 58,
+  "fields": {
+    "match": 59,
+    "home_corners": 10,
+    "away_corners": 9,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 10,
+    "away_shots": 9,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 3,
+    "home_xg": "0.82",
+    "away_xg": "1.16"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 59,
+  "fields": {
+    "match": 60,
+    "home_corners": 3,
+    "away_corners": 5,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 14,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 3,
+    "home_xg": "0.74",
+    "away_xg": "1.17"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 60,
+  "fields": {
+    "match": 61,
+    "home_corners": 5,
+    "away_corners": 7,
+    "home_yellow_cards": 4,
+    "away_yellow_cards": 5,
+    "home_red_cards": 1,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 12,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 3,
+    "home_xg": "2.03",
+    "away_xg": "2.48"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 61,
+  "fields": {
+    "match": 62,
+    "home_corners": 4,
+    "away_corners": 3,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 11,
+    "away_shots": 12,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 4,
+    "home_xg": "1.33",
+    "away_xg": "0.84"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 62,
+  "fields": {
+    "match": 63,
+    "home_corners": 4,
+    "away_corners": 1,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 16,
+    "away_shots": 9,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 3,
+    "home_xg": "1.48",
+    "away_xg": "0.69"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 63,
+  "fields": {
+    "match": 64,
+    "home_corners": 8,
+    "away_corners": 3,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 21,
+    "away_shots": 4,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 0,
+    "home_xg": "3.06",
+    "away_xg": "0.86"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 64,
+  "fields": {
+    "match": 65,
+    "home_corners": 2,
+    "away_corners": 3,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 15,
+    "away_shots": 8,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 3,
+    "home_xg": "1.93",
+    "away_xg": "0.81"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 65,
+  "fields": {
+    "match": 66,
+    "home_corners": 7,
+    "away_corners": 2,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 12,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 2,
+    "home_xg": "1.24",
+    "away_xg": "2.06"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 66,
+  "fields": {
+    "match": 67,
+    "home_corners": 2,
+    "away_corners": 4,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 14,
+    "away_shots": 15,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 8,
+    "home_xg": "2.14",
+    "away_xg": "2.18"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 67,
+  "fields": {
+    "match": 68,
+    "home_corners": 6,
+    "away_corners": 4,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 15,
+    "away_shots": 5,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 2,
+    "home_xg": "1.74",
+    "away_xg": "0.50"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 68,
+  "fields": {
+    "match": 69,
+    "home_corners": 8,
+    "away_corners": 1,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 18,
+    "away_shots": 5,
+    "home_shots_on_target": 9,
+    "away_shots_on_target": 4,
+    "home_xg": "3.82",
+    "away_xg": "0.34"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 69,
+  "fields": {
+    "match": 70,
+    "home_corners": 2,
+    "away_corners": 8,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 6,
+    "away_shots": 17,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 6,
+    "home_xg": "0.37",
+    "away_xg": "1.39"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 70,
+  "fields": {
+    "match": 71,
+    "home_corners": 3,
+    "away_corners": 2,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 6,
+    "away_shots": 10,
+    "home_shots_on_target": 1,
+    "away_shots_on_target": 4,
+    "home_xg": "0.69",
+    "away_xg": "1.10"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 71,
+  "fields": {
+    "match": 72,
+    "home_corners": 5,
+    "away_corners": 2,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 1,
+    "home_shots": 12,
+    "away_shots": 17,
+    "home_shots_on_target": 2,
+    "away_shots_on_target": 6,
+    "home_xg": "2.06",
+    "away_xg": "2.56"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 72,
+  "fields": {
+    "match": 73,
+    "home_corners": 8,
+    "away_corners": 4,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 16,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 3,
+    "home_xg": "0.86",
+    "away_xg": "1.28"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 73,
+  "fields": {
+    "match": 74,
+    "home_corners": 1,
+    "away_corners": 5,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 4,
+    "away_shots": 19,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 4,
+    "home_xg": "0.51",
+    "away_xg": "2.33"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 74,
+  "fields": {
+    "match": 75,
+    "home_corners": 0,
+    "away_corners": 0,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 7,
+    "away_shots": 22,
+    "home_shots_on_target": 1,
+    "away_shots_on_target": 7,
+    "home_xg": "0.26",
+    "away_xg": "3.47"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 75,
+  "fields": {
+    "match": 76,
+    "home_corners": 6,
+    "away_corners": 10,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 9,
+    "away_shots": 16,
+    "home_shots_on_target": 0,
+    "away_shots_on_target": 5,
+    "home_xg": "0.50",
+    "away_xg": "2.08"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 76,
+  "fields": {
+    "match": 77,
+    "home_corners": 9,
+    "away_corners": 4,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 19,
+    "away_shots": 12,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 4,
+    "home_xg": "2.61",
+    "away_xg": "2.53"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 77,
+  "fields": {
+    "match": 78,
+    "home_corners": 6,
+    "away_corners": 5,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 20,
+    "away_shots": 9,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 5,
+    "home_xg": "4.56",
+    "away_xg": "2.05"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 78,
+  "fields": {
+    "match": 79,
+    "home_corners": 11,
+    "away_corners": 3,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 19,
+    "away_shots": 5,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 1,
+    "home_xg": "2.48",
+    "away_xg": "0.79"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 79,
+  "fields": {
+    "match": 80,
+    "home_corners": 2,
+    "away_corners": 2,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 8,
+    "away_shots": 16,
+    "home_shots_on_target": 2,
+    "away_shots_on_target": 3,
+    "home_xg": "1.02",
+    "away_xg": "0.68"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 80,
+  "fields": {
+    "match": 81,
+    "home_corners": 6,
+    "away_corners": 6,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 9,
+    "away_shots": 8,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 2,
+    "home_xg": "1.51",
+    "away_xg": "0.35"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 81,
+  "fields": {
+    "match": 82,
+    "home_corners": 3,
+    "away_corners": 4,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 9,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 3,
+    "home_xg": "2.22",
+    "away_xg": "0.50"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 82,
+  "fields": {
+    "match": 83,
+    "home_corners": 9,
+    "away_corners": 1,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 16,
+    "away_shots": 10,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 4,
+    "home_xg": "1.21",
+    "away_xg": "1.55"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 83,
+  "fields": {
+    "match": 84,
+    "home_corners": 4,
+    "away_corners": 3,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 18,
+    "away_shots": 12,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 5,
+    "home_xg": "2.77",
+    "away_xg": "1.52"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 84,
+  "fields": {
+    "match": 85,
+    "home_corners": 1,
+    "away_corners": 6,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 17,
+    "home_shots_on_target": 9,
+    "away_shots_on_target": 5,
+    "home_xg": "1.96",
+    "away_xg": "0.95"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 85,
+  "fields": {
+    "match": 86,
+    "home_corners": 5,
+    "away_corners": 4,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 17,
+    "away_shots": 18,
+    "home_shots_on_target": 8,
+    "away_shots_on_target": 5,
+    "home_xg": "3.27",
+    "away_xg": "2.12"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 86,
+  "fields": {
+    "match": 87,
+    "home_corners": 4,
+    "away_corners": 3,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 10,
+    "away_shots": 7,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 1,
+    "home_xg": "0.86",
+    "away_xg": "0.35"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 87,
+  "fields": {
+    "match": 88,
+    "home_corners": 5,
+    "away_corners": 6,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 4,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 9,
+    "away_shots": 18,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 4,
+    "home_xg": "0.84",
+    "away_xg": "1.37"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 88,
+  "fields": {
+    "match": 89,
+    "home_corners": 6,
+    "away_corners": 4,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 13,
+    "away_shots": 8,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 4,
+    "home_xg": "0.66",
+    "away_xg": "0.31"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 89,
+  "fields": {
+    "match": 90,
+    "home_corners": 4,
+    "away_corners": 3,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 15,
+    "away_shots": 11,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 7,
+    "home_xg": "2.58",
+    "away_xg": "1.55"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 90,
+  "fields": {
+    "match": 91,
+    "home_corners": 9,
+    "away_corners": 8,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 0,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 12,
+    "away_shots": 7,
+    "home_shots_on_target": 2,
+    "away_shots_on_target": 4,
+    "home_xg": "1.40",
+    "away_xg": "2.09"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 91,
+  "fields": {
+    "match": 92,
+    "home_corners": 10,
+    "away_corners": 1,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 1,
+    "home_shots": 19,
+    "away_shots": 5,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 2,
+    "home_xg": "1.91",
+    "away_xg": "0.21"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 92,
+  "fields": {
+    "match": 93,
+    "home_corners": 1,
+    "away_corners": 6,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 3,
+    "away_shots": 12,
+    "home_shots_on_target": 0,
+    "away_shots_on_target": 8,
+    "home_xg": "0.68",
+    "away_xg": "2.52"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 93,
+  "fields": {
+    "match": 94,
+    "home_corners": 4,
+    "away_corners": 7,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 14,
+    "away_shots": 5,
+    "home_shots_on_target": 7,
+    "away_shots_on_target": 2,
+    "home_xg": "2.64",
+    "away_xg": "0.36"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 94,
+  "fields": {
+    "match": 95,
+    "home_corners": 8,
+    "away_corners": 5,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 1,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 17,
+    "away_shots": 18,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 7,
+    "home_xg": "1.55",
+    "away_xg": "0.92"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 95,
+  "fields": {
+    "match": 96,
+    "home_corners": 6,
+    "away_corners": 5,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 9,
+    "away_shots": 6,
+    "home_shots_on_target": 2,
+    "away_shots_on_target": 2,
+    "home_xg": "0.73",
+    "away_xg": "0.82"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 96,
+  "fields": {
+    "match": 97,
+    "home_corners": 1,
+    "away_corners": 4,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 16,
+    "away_shots": 10,
+    "home_shots_on_target": 4,
+    "away_shots_on_target": 3,
+    "home_xg": "1.47",
+    "away_xg": "0.44"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 97,
+  "fields": {
+    "match": 98,
+    "home_corners": 9,
+    "away_corners": 4,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 15,
+    "away_shots": 8,
+    "home_shots_on_target": 8,
+    "away_shots_on_target": 5,
+    "home_xg": "2.49",
+    "away_xg": "0.90"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 98,
+  "fields": {
+    "match": 99,
+    "home_corners": 4,
+    "away_corners": 1,
+    "home_yellow_cards": 3,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 17,
+    "away_shots": 8,
+    "home_shots_on_target": 3,
+    "away_shots_on_target": 2,
+    "home_xg": "1.18",
+    "away_xg": "1.01"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 99,
+  "fields": {
+    "match": 100,
+    "home_corners": 6,
+    "away_corners": 5,
+    "home_yellow_cards": 4,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 3,
+    "away_shots": 15,
+    "home_shots_on_target": 1,
+    "away_shots_on_target": 9,
+    "home_xg": "0.15",
+    "away_xg": "3.34"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 100,
+  "fields": {
+    "match": 101,
+    "home_corners": 7,
+    "away_corners": 6,
+    "home_yellow_cards": 1,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 15,
+    "away_shots": 12,
+    "home_shots_on_target": 9,
+    "away_shots_on_target": 4,
+    "home_xg": "1.41",
+    "away_xg": "0.52"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 101,
+  "fields": {
+    "match": 102,
+    "home_corners": 0,
+    "away_corners": 2,
+    "home_yellow_cards": 0,
+    "away_yellow_cards": 3,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 15,
+    "away_shots": 12,
+    "home_shots_on_target": 6,
+    "away_shots_on_target": 4,
+    "home_xg": "1.04",
+    "away_xg": "2.13"
+  }
+},
+{
+  "model": "core.matchstats",
+  "pk": 102,
+  "fields": {
+    "match": 103,
+    "home_corners": 2,
+    "away_corners": 4,
+    "home_yellow_cards": 2,
+    "away_yellow_cards": 2,
+    "home_red_cards": 0,
+    "away_red_cards": 0,
+    "home_shots": 9,
+    "away_shots": 12,
+    "home_shots_on_target": 5,
+    "away_shots_on_target": 5,
+    "home_xg": "2.19",
+    "away_xg": "0.77"
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 2,
+  "fields": {
+    "match": 2,
+    "team": 12,
+    "minute": 84
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 3,
+  "fields": {
+    "match": 3,
+    "team": 3,
+    "minute": 13
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 4,
+  "fields": {
+    "match": 4,
+    "team": 17,
+    "minute": 5
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 5,
+  "fields": {
+    "match": 4,
+    "team": 17,
+    "minute": 42
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 6,
+  "fields": {
+    "match": 4,
+    "team": 17,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 7,
+  "fields": {
+    "match": 4,
+    "team": 5,
+    "minute": 78
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 8,
+  "fields": {
+    "match": 6,
+    "team": 14,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 9,
+  "fields": {
+    "match": 6,
+    "team": 14,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 10,
+  "fields": {
+    "match": 6,
+    "team": 14,
+    "minute": 61
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 11,
+  "fields": {
+    "match": 6,
+    "team": 14,
+    "minute": 81
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 12,
+  "fields": {
+    "match": 7,
+    "team": 6,
+    "minute": 55
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 13,
+  "fields": {
+    "match": 7,
+    "team": 11,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 14,
+  "fields": {
+    "match": 8,
+    "team": 18,
+    "minute": 61
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 15,
+  "fields": {
+    "match": 8,
+    "team": 18,
+    "minute": 73
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 16,
+  "fields": {
+    "match": 8,
+    "team": 18,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 17,
+  "fields": {
+    "match": 9,
+    "team": 1,
+    "minute": 10
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 18,
+  "fields": {
+    "match": 9,
+    "team": 1,
+    "minute": 60
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 19,
+  "fields": {
+    "match": 9,
+    "team": 1,
+    "minute": 66
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 20,
+  "fields": {
+    "match": 11,
+    "team": 13,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 21,
+  "fields": {
+    "match": 11,
+    "team": 13,
+    "minute": 49
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 22,
+  "fields": {
+    "match": 11,
+    "team": 4,
+    "minute": 64
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 23,
+  "fields": {
+    "match": 11,
+    "team": 4,
+    "minute": 76
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 24,
+  "fields": {
+    "match": 11,
+    "team": 13,
+    "minute": 88
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 25,
+  "fields": {
+    "match": 11,
+    "team": 13,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 26,
+  "fields": {
+    "match": 12,
+    "team": 8,
+    "minute": 15
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 27,
+  "fields": {
+    "match": 12,
+    "team": 8,
+    "minute": 23
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 28,
+  "fields": {
+    "match": 12,
+    "team": 8,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 29,
+  "fields": {
+    "match": 12,
+    "team": 8,
+    "minute": 54
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 30,
+  "fields": {
+    "match": 12,
+    "team": 8,
+    "minute": 58
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 31,
+  "fields": {
+    "match": 12,
+    "team": 19,
+    "minute": 6
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 32,
+  "fields": {
+    "match": 13,
+    "team": 1,
+    "minute": 35
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 33,
+  "fields": {
+    "match": 13,
+    "team": 1,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 34,
+  "fields": {
+    "match": 14,
+    "team": 4,
+    "minute": 4
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 35,
+  "fields": {
+    "match": 15,
+    "team": 5,
+    "minute": 12
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 36,
+  "fields": {
+    "match": 16,
+    "team": 7,
+    "minute": 47
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 37,
+  "fields": {
+    "match": 16,
+    "team": 7,
+    "minute": 88
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 38,
+  "fields": {
+    "match": 17,
+    "team": 9,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 39,
+  "fields": {
+    "match": 17,
+    "team": 17,
+    "minute": 57
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 40,
+  "fields": {
+    "match": 18,
+    "team": 10,
+    "minute": 23
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 41,
+  "fields": {
+    "match": 18,
+    "team": 10,
+    "minute": 52
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 42,
+  "fields": {
+    "match": 19,
+    "team": 11,
+    "minute": 73
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 43,
+  "fields": {
+    "match": 19,
+    "team": 15,
+    "minute": 58
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 44,
+  "fields": {
+    "match": 20,
+    "team": 16,
+    "minute": 57
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 45,
+  "fields": {
+    "match": 20,
+    "team": 16,
+    "minute": 88
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 46,
+  "fields": {
+    "match": 20,
+    "team": 13,
+    "minute": 58
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 47,
+  "fields": {
+    "match": 20,
+    "team": 13,
+    "minute": 46
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 48,
+  "fields": {
+    "match": 20,
+    "team": 13,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 49,
+  "fields": {
+    "match": 21,
+    "team": 3,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 50,
+  "fields": {
+    "match": 21,
+    "team": 3,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 51,
+  "fields": {
+    "match": 21,
+    "team": 3,
+    "minute": 48
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 52,
+  "fields": {
+    "match": 21,
+    "team": 3,
+    "minute": 56
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 53,
+  "fields": {
+    "match": 21,
+    "team": 3,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 54,
+  "fields": {
+    "match": 22,
+    "team": 9,
+    "minute": 21
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 55,
+  "fields": {
+    "match": 22,
+    "team": 9,
+    "minute": 68
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 56,
+  "fields": {
+    "match": 22,
+    "team": 9,
+    "minute": 78
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 57,
+  "fields": {
+    "match": 23,
+    "team": 8,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 58,
+  "fields": {
+    "match": 23,
+    "team": 8,
+    "minute": 56
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 59,
+  "fields": {
+    "match": 25,
+    "team": 13,
+    "minute": 83
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 60,
+  "fields": {
+    "match": 26,
+    "team": 15,
+    "minute": 27
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 61,
+  "fields": {
+    "match": 26,
+    "team": 15,
+    "minute": 57
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 62,
+  "fields": {
+    "match": 26,
+    "team": 15,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 63,
+  "fields": {
+    "match": 26,
+    "team": 7,
+    "minute": 55
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 64,
+  "fields": {
+    "match": 26,
+    "team": 7,
+    "minute": 66
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 65,
+  "fields": {
+    "match": 27,
+    "team": 19,
+    "minute": 84
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 66,
+  "fields": {
+    "match": 27,
+    "team": 19,
+    "minute": 88
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 67,
+  "fields": {
+    "match": 27,
+    "team": 19,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 68,
+  "fields": {
+    "match": 28,
+    "team": 5,
+    "minute": 77
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 69,
+  "fields": {
+    "match": 28,
+    "team": 18,
+    "minute": 82
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 70,
+  "fields": {
+    "match": 28,
+    "team": 18,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 71,
+  "fields": {
+    "match": 29,
+    "team": 4,
+    "minute": 5
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 72,
+  "fields": {
+    "match": 30,
+    "team": 10,
+    "minute": 7
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 73,
+  "fields": {
+    "match": 30,
+    "team": 20,
+    "minute": 21
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 74,
+  "fields": {
+    "match": 30,
+    "team": 10,
+    "minute": 33
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 75,
+  "fields": {
+    "match": 30,
+    "team": 20,
+    "minute": 55
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 76,
+  "fields": {
+    "match": 30,
+    "team": 10,
+    "minute": 79
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 77,
+  "fields": {
+    "match": 31,
+    "team": 6,
+    "minute": 67
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 78,
+  "fields": {
+    "match": 31,
+    "team": 6,
+    "minute": 89
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 79,
+  "fields": {
+    "match": 31,
+    "team": 14,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 80,
+  "fields": {
+    "match": 32,
+    "team": 3,
+    "minute": 32
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 81,
+  "fields": {
+    "match": 32,
+    "team": 3,
+    "minute": 46
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 82,
+  "fields": {
+    "match": 32,
+    "team": 3,
+    "minute": 79
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 83,
+  "fields": {
+    "match": 33,
+    "team": 4,
+    "minute": 18
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 84,
+  "fields": {
+    "match": 33,
+    "team": 4,
+    "minute": 61
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 85,
+  "fields": {
+    "match": 33,
+    "team": 6,
+    "minute": 48
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 86,
+  "fields": {
+    "match": 34,
+    "team": 5,
+    "minute": 35
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 87,
+  "fields": {
+    "match": 34,
+    "team": 8,
+    "minute": 61
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 88,
+  "fields": {
+    "match": 34,
+    "team": 5,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 89,
+  "fields": {
+    "match": 34,
+    "team": 8,
+    "minute": 85
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 90,
+  "fields": {
+    "match": 35,
+    "team": 13,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 91,
+  "fields": {
+    "match": 38,
+    "team": 11,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 92,
+  "fields": {
+    "match": 39,
+    "team": 14,
+    "minute": 18
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 93,
+  "fields": {
+    "match": 39,
+    "team": 14,
+    "minute": 53
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 94,
+  "fields": {
+    "match": 39,
+    "team": 14,
+    "minute": 68
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 95,
+  "fields": {
+    "match": 40,
+    "team": 16,
+    "minute": 29
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 96,
+  "fields": {
+    "match": 41,
+    "team": 1,
+    "minute": 47
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 97,
+  "fields": {
+    "match": 41,
+    "team": 1,
+    "minute": 57
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 98,
+  "fields": {
+    "match": 41,
+    "team": 1,
+    "minute": 64
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 99,
+  "fields": {
+    "match": 42,
+    "team": 13,
+    "minute": 10
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 100,
+  "fields": {
+    "match": 42,
+    "team": 13,
+    "minute": 29
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 101,
+  "fields": {
+    "match": 42,
+    "team": 10,
+    "minute": 58
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 102,
+  "fields": {
+    "match": 43,
+    "team": 6,
+    "minute": 8
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 103,
+  "fields": {
+    "match": 43,
+    "team": 6,
+    "minute": 31
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 104,
+  "fields": {
+    "match": 43,
+    "team": 1,
+    "minute": 43
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 105,
+  "fields": {
+    "match": 43,
+    "team": 1,
+    "minute": 82
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 106,
+  "fields": {
+    "match": 44,
+    "team": 7,
+    "minute": 2
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 107,
+  "fields": {
+    "match": 44,
+    "team": 17,
+    "minute": 20
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 108,
+  "fields": {
+    "match": 45,
+    "team": 19,
+    "minute": 49
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 109,
+  "fields": {
+    "match": 45,
+    "team": 9,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 110,
+  "fields": {
+    "match": 45,
+    "team": 9,
+    "minute": 68
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 111,
+  "fields": {
+    "match": 46,
+    "team": 20,
+    "minute": 8
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 112,
+  "fields": {
+    "match": 46,
+    "team": 12,
+    "minute": 31
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 113,
+  "fields": {
+    "match": 46,
+    "team": 12,
+    "minute": 39
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 114,
+  "fields": {
+    "match": 46,
+    "team": 12,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 115,
+  "fields": {
+    "match": 47,
+    "team": 15,
+    "minute": 14
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 116,
+  "fields": {
+    "match": 47,
+    "team": 15,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 117,
+  "fields": {
+    "match": 47,
+    "team": 8,
+    "minute": 80
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 118,
+  "fields": {
+    "match": 48,
+    "team": 11,
+    "minute": 38
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 119,
+  "fields": {
+    "match": 48,
+    "team": 11,
+    "minute": 40
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 120,
+  "fields": {
+    "match": 48,
+    "team": 11,
+    "minute": 50
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 121,
+  "fields": {
+    "match": 48,
+    "team": 5,
+    "minute": 20
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 122,
+  "fields": {
+    "match": 50,
+    "team": 18,
+    "minute": 75
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 123,
+  "fields": {
+    "match": 50,
+    "team": 2,
+    "minute": 67
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 124,
+  "fields": {
+    "match": 51,
+    "team": 3,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 125,
+  "fields": {
+    "match": 51,
+    "team": 14,
+    "minute": 9
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 126,
+  "fields": {
+    "match": 52,
+    "team": 2,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 127,
+  "fields": {
+    "match": 52,
+    "team": 2,
+    "minute": 49
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 128,
+  "fields": {
+    "match": 52,
+    "team": 2,
+    "minute": 51
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 129,
+  "fields": {
+    "match": 52,
+    "team": 11,
+    "minute": 3
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 130,
+  "fields": {
+    "match": 53,
+    "team": 5,
+    "minute": 8
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 131,
+  "fields": {
+    "match": 53,
+    "team": 5,
+    "minute": 20
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 132,
+  "fields": {
+    "match": 53,
+    "team": 5,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 133,
+  "fields": {
+    "match": 53,
+    "team": 15,
+    "minute": 26
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 134,
+  "fields": {
+    "match": 54,
+    "team": 9,
+    "minute": 9
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 135,
+  "fields": {
+    "match": 54,
+    "team": 9,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 136,
+  "fields": {
+    "match": 54,
+    "team": 13,
+    "minute": 87
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 137,
+  "fields": {
+    "match": 55,
+    "team": 12,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 138,
+  "fields": {
+    "match": 55,
+    "team": 12,
+    "minute": 54
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 139,
+  "fields": {
+    "match": 55,
+    "team": 4,
+    "minute": 26
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 140,
+  "fields": {
+    "match": 55,
+    "team": 4,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 141,
+  "fields": {
+    "match": 56,
+    "team": 14,
+    "minute": 12
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 142,
+  "fields": {
+    "match": 56,
+    "team": 14,
+    "minute": 61
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 143,
+  "fields": {
+    "match": 56,
+    "team": 14,
+    "minute": 65
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 144,
+  "fields": {
+    "match": 56,
+    "team": 14,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 145,
+  "fields": {
+    "match": 56,
+    "team": 14,
+    "minute": 91
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 146,
+  "fields": {
+    "match": 56,
+    "team": 7,
+    "minute": 38
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 147,
+  "fields": {
+    "match": 57,
+    "team": 16,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 148,
+  "fields": {
+    "match": 57,
+    "team": 3,
+    "minute": 84
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 149,
+  "fields": {
+    "match": 57,
+    "team": 3,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 150,
+  "fields": {
+    "match": 58,
+    "team": 18,
+    "minute": 38
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 151,
+  "fields": {
+    "match": 59,
+    "team": 1,
+    "minute": 54
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 152,
+  "fields": {
+    "match": 59,
+    "team": 20,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 153,
+  "fields": {
+    "match": 60,
+    "team": 10,
+    "minute": 18
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 154,
+  "fields": {
+    "match": 60,
+    "team": 19,
+    "minute": 65
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 155,
+  "fields": {
+    "match": 61,
+    "team": 8,
+    "minute": 24
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 156,
+  "fields": {
+    "match": 61,
+    "team": 6,
+    "minute": 77
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 157,
+  "fields": {
+    "match": 61,
+    "team": 6,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 158,
+  "fields": {
+    "match": 61,
+    "team": 6,
+    "minute": 91
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 159,
+  "fields": {
+    "match": 62,
+    "team": 4,
+    "minute": 78
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 160,
+  "fields": {
+    "match": 62,
+    "team": 4,
+    "minute": 84
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 161,
+  "fields": {
+    "match": 62,
+    "team": 4,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 162,
+  "fields": {
+    "match": 62,
+    "team": 11,
+    "minute": 70
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 163,
+  "fields": {
+    "match": 63,
+    "team": 12,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 164,
+  "fields": {
+    "match": 63,
+    "team": 1,
+    "minute": 23
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 165,
+  "fields": {
+    "match": 63,
+    "team": 1,
+    "minute": 57
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 166,
+  "fields": {
+    "match": 64,
+    "team": 3,
+    "minute": 38
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 167,
+  "fields": {
+    "match": 64,
+    "team": 3,
+    "minute": 67
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 168,
+  "fields": {
+    "match": 65,
+    "team": 15,
+    "minute": 8
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 169,
+  "fields": {
+    "match": 65,
+    "team": 15,
+    "minute": 31
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 170,
+  "fields": {
+    "match": 66,
+    "team": 8,
+    "minute": 14
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 171,
+  "fields": {
+    "match": 66,
+    "team": 8,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 172,
+  "fields": {
+    "match": 66,
+    "team": 13,
+    "minute": 63
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 173,
+  "fields": {
+    "match": 67,
+    "team": 10,
+    "minute": 76
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 174,
+  "fields": {
+    "match": 67,
+    "team": 10,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 175,
+  "fields": {
+    "match": 67,
+    "team": 9,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 176,
+  "fields": {
+    "match": 68,
+    "team": 2,
+    "minute": 25
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 177,
+  "fields": {
+    "match": 68,
+    "team": 2,
+    "minute": 63
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 178,
+  "fields": {
+    "match": 68,
+    "team": 7,
+    "minute": 78
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 179,
+  "fields": {
+    "match": 69,
+    "team": 16,
+    "minute": 58
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 180,
+  "fields": {
+    "match": 69,
+    "team": 16,
+    "minute": 84
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 181,
+  "fields": {
+    "match": 70,
+    "team": 20,
+    "minute": 21
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 182,
+  "fields": {
+    "match": 70,
+    "team": 6,
+    "minute": 86
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 183,
+  "fields": {
+    "match": 71,
+    "team": 14,
+    "minute": 9
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 184,
+  "fields": {
+    "match": 72,
+    "team": 8,
+    "minute": 49
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 185,
+  "fields": {
+    "match": 72,
+    "team": 8,
+    "minute": 52
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 186,
+  "fields": {
+    "match": 72,
+    "team": 8,
+    "minute": 84
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 187,
+  "fields": {
+    "match": 73,
+    "team": 6,
+    "minute": 41
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 188,
+  "fields": {
+    "match": 73,
+    "team": 6,
+    "minute": 84
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 189,
+  "fields": {
+    "match": 73,
+    "team": 16,
+    "minute": 76
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 190,
+  "fields": {
+    "match": 74,
+    "team": 7,
+    "minute": 18
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 191,
+  "fields": {
+    "match": 74,
+    "team": 7,
+    "minute": 68
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 192,
+  "fields": {
+    "match": 75,
+    "team": 5,
+    "minute": 43
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 193,
+  "fields": {
+    "match": 75,
+    "team": 5,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 194,
+  "fields": {
+    "match": 76,
+    "team": 3,
+    "minute": 58
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 195,
+  "fields": {
+    "match": 77,
+    "team": 13,
+    "minute": 78
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 196,
+  "fields": {
+    "match": 77,
+    "team": 15,
+    "minute": 2
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 197,
+  "fields": {
+    "match": 77,
+    "team": 15,
+    "minute": 84
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 198,
+  "fields": {
+    "match": 78,
+    "team": 9,
+    "minute": 64
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 199,
+  "fields": {
+    "match": 78,
+    "team": 9,
+    "minute": 69
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 200,
+  "fields": {
+    "match": 78,
+    "team": 9,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 201,
+  "fields": {
+    "match": 78,
+    "team": 4,
+    "minute": 7
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 202,
+  "fields": {
+    "match": 78,
+    "team": 4,
+    "minute": 38
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 203,
+  "fields": {
+    "match": 78,
+    "team": 4,
+    "minute": 89
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 204,
+  "fields": {
+    "match": 79,
+    "team": 14,
+    "minute": 58
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 205,
+  "fields": {
+    "match": 79,
+    "team": 14,
+    "minute": 63
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 206,
+  "fields": {
+    "match": 80,
+    "team": 18,
+    "minute": 16
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 207,
+  "fields": {
+    "match": 80,
+    "team": 18,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 208,
+  "fields": {
+    "match": 81,
+    "team": 1,
+    "minute": 5
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 209,
+  "fields": {
+    "match": 81,
+    "team": 2,
+    "minute": 37
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 210,
+  "fields": {
+    "match": 81,
+    "team": 2,
+    "minute": 77
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 211,
+  "fields": {
+    "match": 82,
+    "team": 12,
+    "minute": 3
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 212,
+  "fields": {
+    "match": 82,
+    "team": 12,
+    "minute": 15
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 213,
+  "fields": {
+    "match": 82,
+    "team": 19,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 214,
+  "fields": {
+    "match": 83,
+    "team": 8,
+    "minute": 4
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 215,
+  "fields": {
+    "match": 83,
+    "team": 18,
+    "minute": 22
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 216,
+  "fields": {
+    "match": 83,
+    "team": 18,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 217,
+  "fields": {
+    "match": 84,
+    "team": 16,
+    "minute": 18
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 218,
+  "fields": {
+    "match": 84,
+    "team": 16,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 219,
+  "fields": {
+    "match": 84,
+    "team": 11,
+    "minute": 56
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 220,
+  "fields": {
+    "match": 85,
+    "team": 15,
+    "minute": 24
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 221,
+  "fields": {
+    "match": 85,
+    "team": 15,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 222,
+  "fields": {
+    "match": 85,
+    "team": 15,
+    "minute": 61
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 223,
+  "fields": {
+    "match": 85,
+    "team": 15,
+    "minute": 91
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 224,
+  "fields": {
+    "match": 85,
+    "team": 6,
+    "minute": 74
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 225,
+  "fields": {
+    "match": 85,
+    "team": 6,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 226,
+  "fields": {
+    "match": 86,
+    "team": 5,
+    "minute": 5
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 227,
+  "fields": {
+    "match": 86,
+    "team": 5,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 228,
+  "fields": {
+    "match": 86,
+    "team": 5,
+    "minute": 60
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 229,
+  "fields": {
+    "match": 86,
+    "team": 13,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 230,
+  "fields": {
+    "match": 86,
+    "team": 13,
+    "minute": 89
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 231,
+  "fields": {
+    "match": 87,
+    "team": 3,
+    "minute": 39
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 232,
+  "fields": {
+    "match": 88,
+    "team": 2,
+    "minute": 19
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 233,
+  "fields": {
+    "match": 89,
+    "team": 4,
+    "minute": 25
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 234,
+  "fields": {
+    "match": 89,
+    "team": 4,
+    "minute": 40
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 235,
+  "fields": {
+    "match": 90,
+    "team": 20,
+    "minute": 42
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 236,
+  "fields": {
+    "match": 90,
+    "team": 20,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 237,
+  "fields": {
+    "match": 90,
+    "team": 7,
+    "minute": 14
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 238,
+  "fields": {
+    "match": 90,
+    "team": 7,
+    "minute": 30
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 239,
+  "fields": {
+    "match": 90,
+    "team": 7,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 240,
+  "fields": {
+    "match": 91,
+    "team": 1,
+    "minute": 19
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 241,
+  "fields": {
+    "match": 91,
+    "team": 1,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 242,
+  "fields": {
+    "match": 91,
+    "team": 1,
+    "minute": 89
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 243,
+  "fields": {
+    "match": 92,
+    "team": 11,
+    "minute": 9
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 244,
+  "fields": {
+    "match": 92,
+    "team": 11,
+    "minute": 62
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 245,
+  "fields": {
+    "match": 92,
+    "team": 11,
+    "minute": 75
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 246,
+  "fields": {
+    "match": 93,
+    "team": 3,
+    "minute": 14
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 247,
+  "fields": {
+    "match": 93,
+    "team": 3,
+    "minute": 35
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 248,
+  "fields": {
+    "match": 94,
+    "team": 6,
+    "minute": 11
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 249,
+  "fields": {
+    "match": 94,
+    "team": 6,
+    "minute": 64
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 250,
+  "fields": {
+    "match": 94,
+    "team": 6,
+    "minute": 70
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 251,
+  "fields": {
+    "match": 95,
+    "team": 17,
+    "minute": 48
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 252,
+  "fields": {
+    "match": 95,
+    "team": 17,
+    "minute": 50
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 253,
+  "fields": {
+    "match": 95,
+    "team": 15,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 254,
+  "fields": {
+    "match": 95,
+    "team": 15,
+    "minute": 81
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 255,
+  "fields": {
+    "match": 96,
+    "team": 9,
+    "minute": 30
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 256,
+  "fields": {
+    "match": 96,
+    "team": 9,
+    "minute": 51
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 257,
+  "fields": {
+    "match": 97,
+    "team": 13,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 258,
+  "fields": {
+    "match": 97,
+    "team": 13,
+    "minute": 58
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 259,
+  "fields": {
+    "match": 98,
+    "team": 14,
+    "minute": 17
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 260,
+  "fields": {
+    "match": 98,
+    "team": 14,
+    "minute": 33
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 261,
+  "fields": {
+    "match": 98,
+    "team": 14,
+    "minute": 60
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 262,
+  "fields": {
+    "match": 98,
+    "team": 4,
+    "minute": 25
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 263,
+  "fields": {
+    "match": 99,
+    "team": 18,
+    "minute": 46
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 264,
+  "fields": {
+    "match": 99,
+    "team": 10,
+    "minute": 15
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 265,
+  "fields": {
+    "match": 100,
+    "team": 8,
+    "minute": 34
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 266,
+  "fields": {
+    "match": 101,
+    "team": 19,
+    "minute": 35
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 267,
+  "fields": {
+    "match": 101,
+    "team": 19,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 268,
+  "fields": {
+    "match": 101,
+    "team": 19,
+    "minute": 90
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 269,
+  "fields": {
+    "match": 101,
+    "team": 16,
+    "minute": 4
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 270,
+  "fields": {
+    "match": 102,
+    "team": 2,
+    "minute": 45
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 271,
+  "fields": {
+    "match": 102,
+    "team": 21,
+    "minute": 20
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 272,
+  "fields": {
+    "match": 102,
+    "team": 21,
+    "minute": 61
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 273,
+  "fields": {
+    "match": 103,
+    "team": 3,
+    "minute": 1
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 274,
+  "fields": {
+    "match": 103,
+    "team": 3,
+    "minute": 28
+  }
+},
+{
+  "model": "core.matchgoal",
+  "pk": 275,
+  "fields": {
+    "match": 103,
+    "team": 3,
+    "minute": 48
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Season",
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "codename": "add_season"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Season",
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "codename": "change_season"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Season",
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "codename": "delete_season"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Season",
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "codename": "view_season"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add match stats",
+    "content_type": [
+      "core",
+      "matchstats"
+    ],
+    "codename": "add_matchstats"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change match stats",
+    "content_type": [
+      "core",
+      "matchstats"
+    ],
+    "codename": "change_matchstats"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete match stats",
+    "content_type": [
+      "core",
+      "matchstats"
+    ],
+    "codename": "delete_matchstats"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view match stats",
+    "content_type": [
+      "core",
+      "matchstats"
+    ],
+    "codename": "view_matchstats"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add match goal",
+    "content_type": [
+      "core",
+      "matchgoal"
+    ],
+    "codename": "add_matchgoal"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change match goal",
+    "content_type": [
+      "core",
+      "matchgoal"
+    ],
+    "codename": "change_matchgoal"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete match goal",
+    "content_type": [
+      "core",
+      "matchgoal"
+    ],
+    "codename": "delete_matchgoal"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view match goal",
+    "content_type": [
+      "core",
+      "matchgoal"
+    ],
+    "codename": "view_matchgoal"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Team",
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "codename": "add_team"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Team",
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "codename": "change_team"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Team",
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "codename": "delete_team"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Team",
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "codename": "view_team"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Championship",
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "codename": "add_championship"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Championship",
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "codename": "change_championship"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Championship",
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "codename": "delete_championship"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Championship",
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "codename": "view_championship"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add round",
+    "content_type": [
+      "core",
+      "round"
+    ],
+    "codename": "add_round"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change round",
+    "content_type": [
+      "core",
+      "round"
+    ],
+    "codename": "change_round"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete round",
+    "content_type": [
+      "core",
+      "round"
+    ],
+    "codename": "delete_round"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view round",
+    "content_type": [
+      "core",
+      "round"
+    ],
+    "codename": "view_round"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add match",
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "codename": "add_match"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change match",
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "codename": "change_match"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete match",
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "codename": "delete_match"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view match",
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "codename": "view_match"
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$lVoZ0Lv5UMPhwK5UAhxj2z$MmIDKHmOAIH0iOhK5D5U8CPbvTfHWZjo/c5JCHLRsWQ=",
+    "last_login": "2026-08-19T06:46:33.971Z",
+    "is_superuser": true,
+    "username": "bilan",
+    "first_name": "",
+    "last_name": "",
+    "email": "bilanmo1488@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-06-27T11:02:20.892Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-06-27T13:18:00.130Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "object_id": "1",
+    "object_repr": "Premier League",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-06-27T13:25:15.852Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "object_id": "1",
+    "object_repr": "2025/2026",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-06-27T13:26:38.967Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "1",
+    "object_repr": "Tottenham Hotspur",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-06-27T13:28:05.634Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "2",
+    "object_repr": "Aston Villa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-06-27T13:29:33.257Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "object_id": "1",
+    "object_repr": "2025/2026",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Teams\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-06-27T13:30:09.188Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "round"
+    ],
+    "object_id": "1",
+    "object_repr": "Round 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-06-27T13:33:32.172Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "1",
+    "object_repr": "Tottenham Hotspur vs Aston Villa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"match goal\", \"object\": \"Tottenham Hotspur - 45'\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-07-11T07:29:21.141Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "round"
+    ],
+    "object_id": "2",
+    "object_repr": "Round 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-07-12T10:50:50.026Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "1",
+    "object_repr": "Tottenham Hotspur vs Aston Villa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-07-12T12:58:41.719Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "11",
+    "object_repr": "Liverpool vs Bournemouth",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"match goal\", \"object\": \"Liverpool - 88'\", \"fields\": [\"Team\"]}}, {\"changed\": {\"name\": \"match goal\", \"object\": \"Liverpool - 90'\", \"fields\": [\"Team\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-07-12T13:46:03.455Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "30",
+    "object_repr": "Wolverhampton Wanderers vs Everton",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"match goal\", \"object\": \"Everton - 33'\", \"fields\": [\"Team\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-07-17T05:03:01.494Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "11",
+    "object_repr": "Liverpool vs Bournemouth",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-07-17T05:03:20.548Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "10",
+    "object_repr": "Aston Villa vs Newcastle United",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-07-17T05:03:53.051Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "9",
+    "object_repr": "Tottenham Hotspur vs Burnley",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-07-17T05:04:04.223Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "8",
+    "object_repr": "Sunderland vs West Ham United",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-07-17T05:04:10.823Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "7",
+    "object_repr": "Brighton vs Fulham",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-07-17T05:04:19.326Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "6",
+    "object_repr": "Wolverhampton Wanderers vs Manchester City",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-07-17T05:04:34.314Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "5",
+    "object_repr": "Chelsea vs Crystal Palace",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-07-17T05:04:44.342Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "4",
+    "object_repr": "Nottingham Forest vs Brentford",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-07-17T05:04:51.923Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "3",
+    "object_repr": "Manchester United vs Arsenal",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-07-17T05:04:59.942Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "2",
+    "object_repr": "Leeds United vs Everton",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-07-17T05:06:27.349Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "21",
+    "object_repr": "Arsenal vs Leeds United",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-07-17T05:06:35.956Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "20",
+    "object_repr": "Newcastle United vs Liverpool",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-07-17T05:06:50.123Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "19",
+    "object_repr": "Fulham vs Manchester United",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-07-17T05:06:59.477Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "18",
+    "object_repr": "Everton vs Brighton",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-07-17T05:07:06.143Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "17",
+    "object_repr": "Crystal Palace vs Nottingham Forest",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-07-17T05:07:12.235Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "16",
+    "object_repr": "Burnley vs Sunderland",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-07-17T05:07:19.511Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "15",
+    "object_repr": "Brentford vs Aston Villa",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-07-17T05:07:27.327Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "14",
+    "object_repr": "Bournemouth vs Wolverhampton Wanderers",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-07-17T05:07:35.165Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "13",
+    "object_repr": "Manchester City vs Tottenham Hotspur",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-07-17T05:07:42.699Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "12",
+    "object_repr": "West Ham United vs Chelsea",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-07-18T14:42:47.970Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "3",
+    "object_repr": "Arsenal",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-07-18T14:44:10.115Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "2",
+    "object_repr": "Aston Villa",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-07-18T14:44:59.029Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "4",
+    "object_repr": "Bournemouth",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-07-18T14:46:15.989Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "5",
+    "object_repr": "Brentford",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-07-18T14:47:00.584Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "6",
+    "object_repr": "Brighton",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-07-18T14:54:53.342Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "7",
+    "object_repr": "Burnley",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-07-18T14:55:14.322Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "8",
+    "object_repr": "Chelsea",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-07-18T14:55:38.419Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "9",
+    "object_repr": "Crystal Palace",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-07-18T14:55:56.631Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "10",
+    "object_repr": "Everton",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-07-18T14:56:15.286Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "11",
+    "object_repr": "Fulham",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2026-07-18T14:56:48.266Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "12",
+    "object_repr": "Leeds United",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2026-07-18T14:57:09.636Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "13",
+    "object_repr": "Liverpool",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2026-07-18T14:57:53.916Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "14",
+    "object_repr": "Manchester City",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2026-07-18T14:58:11.580Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "15",
+    "object_repr": "Manchester United",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2026-07-18T14:58:34.174Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "16",
+    "object_repr": "Newcastle United",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2026-07-18T14:59:09.805Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "17",
+    "object_repr": "Nottingham Forest",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2026-07-18T14:59:26.272Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "18",
+    "object_repr": "Sunderland",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2026-07-18T14:59:54.663Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "1",
+    "object_repr": "Tottenham Hotspur",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2026-07-18T15:00:20.606Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "19",
+    "object_repr": "West Ham United",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2026-07-18T15:00:34.710Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "20",
+    "object_repr": "Wolverhampton Wanderers",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Short name\", \"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2026-08-19T05:27:10.557Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "object_id": "2",
+    "object_repr": "League 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2026-08-19T05:29:31.971Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "21",
+    "object_repr": "Paris Saint-Germain",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2026-08-19T05:31:33.513Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "object_id": "3",
+    "object_repr": "The FA Community Shield",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2026-08-19T05:37:52.046Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "object_id": "2",
+    "object_repr": "2026/2027",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2026-08-19T05:43:43.099Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "22",
+    "object_repr": "Ipswich Town",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2026-08-19T05:44:03.987Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "23",
+    "object_repr": "Coventry City",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2026-08-19T05:44:28.328Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "team"
+    ],
+    "object_id": "24",
+    "object_repr": "Hull City",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2026-08-19T05:44:46.334Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "object_id": "2",
+    "object_repr": "2026/2027",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Teams\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2026-08-19T05:46:13.668Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "object_id": "4",
+    "object_repr": "UEFA SuperCup",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2026-08-19T05:47:07.633Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "object_id": "3",
+    "object_repr": "2025/2026",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2026-08-19T05:47:49.229Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "season"
+    ],
+    "object_id": "4",
+    "object_repr": "2025/2026",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2026-08-19T09:09:25.981Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "102",
+    "object_repr": "Paris Saint-Germain vs Aston Villa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"match stats\", \"object\": \"Stats for Paris Saint-Germain vs Aston Villa\"}}, {\"added\": {\"name\": \"match goal\", \"object\": \"Aston Villa - 45'\"}}, {\"added\": {\"name\": \"match goal\", \"object\": \"Paris Saint-Germain - 20'\"}}, {\"added\": {\"name\": \"match goal\", \"object\": \"Paris Saint-Germain - 61'\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2026-08-19T09:44:58.109Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "103",
+    "object_repr": "Arsenal vs Manchester City",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"match stats\", \"object\": \"Stats for Arsenal vs Manchester City\"}}, {\"added\": {\"name\": \"match goal\", \"object\": \"Arsenal - 1'\"}}, {\"added\": {\"name\": \"match goal\", \"object\": \"Arsenal - 28'\"}}, {\"added\": {\"name\": \"match goal\", \"object\": \"Arsenal - 48'\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2026-08-19T09:51:28.592Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "round"
+    ],
+    "object_id": "39",
+    "object_repr": "2026/2027 ù Premier League ù Round 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2026-08-19T09:54:26.213Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "104",
+    "object_repr": "Arsenal vs Coventry City",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2026-08-19T09:57:11.746Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "105",
+    "object_repr": "Hull City vs Manchester United",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2026-08-19T12:17:49.986Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "106",
+    "object_repr": "Everton vs Crystal Palace",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2026-08-19T12:18:13.800Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "106",
+    "object_repr": "Everton vs Crystal Palace",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Round\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2026-08-19T12:19:27.816Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "107",
+    "object_repr": "Ipswich Town vs Sunderland",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2026-08-19T12:20:49.055Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "108",
+    "object_repr": "Nottingham Forest vs Leeds United",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2026-08-19T14:48:03.363Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "109",
+    "object_repr": "Brentford vs Tottenham Hotspur",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2026-08-19T14:49:47.038Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "110",
+    "object_repr": "Brighton vs Aston Villa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2026-08-19T14:51:52.613Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "111",
+    "object_repr": "Manchester City vs Bournemouth",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2026-08-19T14:53:15.646Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "112",
+    "object_repr": "Newcastle United vs Liverpool",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2026-08-19T14:54:29.444Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "match"
+    ],
+    "object_id": "113",
+    "object_repr": "Fulham vs Chelsea",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2026-08-19T15:29:38.430Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "object_id": "1",
+    "object_repr": "Premier League",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2026-08-19T15:31:09.491Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "object_id": "2",
+    "object_repr": "League 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2026-08-19T15:32:11.335Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "object_id": "3",
+    "object_repr": "The FA Community Shield",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2026-08-19T15:41:17.056Z",
+    "user": [
+      "bilan"
+    ],
+    "content_type": [
+      "core",
+      "championship"
+    ],
+    "object_id": "4",
+    "object_repr": "UEFA SuperCup",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+}
+]
