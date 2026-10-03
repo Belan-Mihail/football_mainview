@@ -1,16 +1,21 @@
 import type { Match, Team } from "../types/football";
 import { defineTeamLevel } from "../utils/5defineTeamLevel";
+import { Link } from "react-router-dom";
 
 interface MatchRowProps {
   match: Match;
   homeTeam: Team;
   awayTeam: Team;
+  championshipSlug: string;
+  language: string;
 }
 
 const MatchRow: React.FC<MatchRowProps> = ({
   match,
   homeTeam,
   awayTeam,
+  championshipSlug,
+  language
 }) => {
   const homeGoals = match.goals.filter(
     (goal) => goal.team === homeTeam.id
@@ -26,12 +31,17 @@ const MatchRow: React.FC<MatchRowProps> = ({
       <div className="hidden min-[800px]:flex justify-center py-1">
         <div className="inline-grid grid-cols-[36px_180px_60px_180px_36px] gap-x-2 text-xs">
 
-          <div className="text-center font-semibold text-blue-700">
+          <div className="text-center font-semibold">
             {match.home_odds ? defineTeamLevel(match.home_odds) : ""}
           </div>
 
-          <div className="truncate">
-            {homeTeam.short_name}
+          <div className="truncate text-blue-700">
+            <Link
+              to={`/${language}/championship/${championshipSlug}/team/${homeTeam.slug}`}
+              className="hover:underline"
+            >
+              {homeTeam.short_name}
+            </Link>
           </div>
 
           <div className="text-center font-semibold">
@@ -46,11 +56,16 @@ const MatchRow: React.FC<MatchRowProps> = ({
               })}
           </div>
 
-          <div className="truncate text-right">
-            {awayTeam.short_name}
+          <div className="truncate text-right text-blue-700">
+            <Link
+              to={`/${language}/championship/${championshipSlug}/team/${awayTeam.slug}`}
+              className="hover:underline"
+            >
+              {awayTeam.short_name}
+            </Link>
           </div>
 
-          <div className="text-center font-semibold text-blue-700">
+          <div className="text-center font-semibold">
             {match.away_odds ? defineTeamLevel(match.away_odds) : ""}
           </div>
 

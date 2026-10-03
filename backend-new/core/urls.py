@@ -4,6 +4,7 @@ from .views import (
     ChampionshipListAPIView,
     ChampionshipDataAPIView,
     RoundDataAPIView,
+    TeamDataAPIView,
 )
 
 urlpatterns = [
@@ -21,5 +22,10 @@ urlpatterns = [
         "championships/<slug:championship_slug>/rounds/<int:season_id>/<int:round_number>/",
         RoundDataAPIView.as_view(),
         name="round-data",
+    ),
+    path(
+        "teams/<slug:team_slug>/data/",
+        TeamDataAPIView.as_view(),
+        name="team-data",
     ),
 ]

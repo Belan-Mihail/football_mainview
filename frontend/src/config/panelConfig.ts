@@ -24,6 +24,10 @@ import type {
   MatchFilter,
   RoundData,
 } from "../types/football";
+import AdditionalStatisticsGeneralView from "../views/6 additionalStatistics/AdditionalStatisticsGeneralView";
+import AdditionalStatisticsByCategoryView from "../views/6 additionalStatistics/AdditionalStatisticsByCategoryView";
+import AdditionalStatisticsByFavorite from "../views/6 additionalStatistics/AdditionalStatisticsByFavorite";
+
 
 
 export interface ViewProps {
@@ -41,7 +45,8 @@ export type PanelType =
   | "RESULTS"
   | "BTTS"
   | "TOTAL"
-  | "HANDICAP";
+  | "HANDICAP"
+  | "ADDITIONAL";
 
 
 export type TranslationKey =
@@ -52,7 +57,8 @@ export type TranslationKey =
   | "generalResults"
   | "favorites"
   | "byCategories"
-  | "general";
+  | "general"
+  | "additionalStatistics";
 
 
 export interface ViewConfig {
@@ -74,11 +80,12 @@ export interface ViewConfig {
 export interface PanelConfig {
 
   translationKey:
-    | "general"
-    | "results"
-    | "btts"
-    | "total"
-    | "handicap";
+  | "general"
+  | "results"
+  | "btts"
+  | "total"
+  | "handicap"
+  | "additional";
 
   slug: string;
 
@@ -316,4 +323,50 @@ export const panelConfig:
       },
     },
   },
+
+  ADDITIONAL: {
+
+    translationKey: "additionalStatistics",
+
+    slug: "additional-statistics",
+
+    views: {
+
+      GENERAL_RESULTS: {
+
+        translationKey: "general",
+
+        slug: "",
+
+        pageKey: "additional",
+
+        component: AdditionalStatisticsGeneralView,
+      },
+
+      BY_CATEGORIES: {
+
+        translationKey: "byCategories",
+
+        slug: "categories",
+
+        pageKey: "additionalCategories",
+
+        component: AdditionalStatisticsByCategoryView,
+      },
+
+      FAVORITES: {
+
+        translationKey: "favorites",
+
+        slug: "favorites",
+
+        pageKey: "additionalFavorites",
+
+        component: AdditionalStatisticsByFavorite,
+      },
+
+    },
+
+  },
+
 };

@@ -35,6 +35,7 @@ const ScheduleView: React.FC<ViewProps> = ({ data, filter }) => {
       matches={scheduledMatches}
       rounds={data.rounds}
       teams={data.teams}
+      championshipSlug={data.championship.slug}
     />
   );
 };

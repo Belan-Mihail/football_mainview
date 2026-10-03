@@ -14,7 +14,7 @@ interface MatchListProps {
 
   reverseRounds?: boolean;
   roundLinks?: boolean;
-  championshipSlug?: string;
+  championshipSlug: string;
 }
 
 const MatchList: React.FC<MatchListProps> = ({
@@ -88,6 +88,8 @@ const MatchList: React.FC<MatchListProps> = ({
                 match={match}
                 homeTeam={homeTeam}
                 awayTeam={awayTeam}
+                championshipSlug={championshipSlug}
+                language={language}
               />
             );
           })}

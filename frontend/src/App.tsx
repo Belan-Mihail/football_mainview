@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ChampionshipPage from "./pages/ChampionshipPage";
 import RoundPage from "./pages/RoundPage";
+import TeamPage from "./pages/TeamPage";
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
         <Route
           path="/:language/championship/:slug/round/:season/:round"
           element={<RoundPage />}
+        />
+
+        <Route
+          path="/:language/championship/:championshipSlug/team/:teamSlug"
+          element={<TeamPage />}
         />
 
         <Route

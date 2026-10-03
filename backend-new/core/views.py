@@ -1,7 +1,8 @@
 from django.shortcuts import get_object_or_404
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .football.services.championship_loader import load_championship_data
+from .football.services.championship_loader import load_championship_data, load_team_data
+
 
 from .models import (
     Championship,
@@ -136,3 +137,12 @@ class RoundDataAPIView(APIView):
                 many=True,
             ).data,
         })
+      
+
+class TeamDataAPIView(APIView):
+
+    def get(self, request, team_slug):
+
+        data = load_team_data(team_slug)
+
+        return Response(data)  

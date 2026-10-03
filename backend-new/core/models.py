@@ -21,6 +21,11 @@ class Team(models.Model):
 
     name = models.CharField(max_length=255)
 
+    slug = models.SlugField(
+        max_length=100,
+        blank=True,
+    )
+
     short_name = models.CharField(max_length=50, blank=True)
     code = models.CharField(max_length=5, blank=True)
 

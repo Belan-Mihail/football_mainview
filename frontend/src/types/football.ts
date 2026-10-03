@@ -1,6 +1,7 @@
 export interface Championship {
   id: number;
   name: string;
+  slug: string;
 }
 
 export interface Team {
@@ -8,6 +9,8 @@ export interface Team {
   championship: number;
 
   name: string;
+
+  slug: string;
 
   short_name: string;
   code: string;
@@ -80,8 +83,8 @@ export interface Match {
   home_team: number;
   away_team: number;
 
-  home_odds: number | null;
-  away_odds: number | null;
+  home_odds: number;
+  away_odds: number;
 
   match_date: string;
   odds_date: string;
@@ -92,7 +95,7 @@ export interface Match {
 
   goals: Goal[];
 
-  stats: MatchStats | null;
+  stats: MatchStats;
 }
 
 export interface ChampionshipData {
