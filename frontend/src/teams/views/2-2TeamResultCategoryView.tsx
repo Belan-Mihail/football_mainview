@@ -5,6 +5,9 @@ import type { TeamViewProps } from "../config/teamPanelConfig";
 
 import { calculateGeneralResultStatistics } from "../logic/3TeamsResultGeneralStatistics";
 
+import useLanguage from "../../hooks/useLanguage";
+import { teamTranslations } from "../config/teamTranslations";
+
 
 // ==========================================================
 // TYPES
@@ -42,6 +45,9 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
 
   const [side, setSide] =
     useState<Side>("ALL");
+
+  const language = useLanguage();
+  const t = teamTranslations[language];
 
   /*
    * Set allows several categories to stay open
@@ -332,8 +338,8 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
 
   const categoryTitle =
     categoryType === "OWN"
-      ? "Team Categories"
-      : "Opponent Categories";
+      ? t.common.teamCategories
+      : t.common.opponentCategories;
 
 
   // ========================================================
@@ -342,10 +348,10 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
 
   const sideTitle =
     side === "HOME"
-      ? "Home"
+      ? t.common.home
       : side === "AWAY"
-        ? "Away"
-        : "All";
+        ? t.common.away
+        : t.common.all;
 
 
   // ========================================================
@@ -381,7 +387,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
             <div>
 
               <h2 className="text-sm font-semibold text-gray-900">
-                Results by Categories
+                {t.common.resultsByCategories}
               </h2>
 
               <div className="mt-1 text-xs text-gray-500">
@@ -391,7 +397,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
             </div>
 
             <div className="rounded bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700">
-              {filteredMatchCategories.length} matches
+              {filteredMatchCategories.length} {t.common.matches}
             </div>
 
           </div>
@@ -412,7 +418,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Team Categories
+              {t.common.teamCategories}
             </button>
 
 
@@ -425,7 +431,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Opponent Categories
+              {t.common.opponentCategories}
             </button>
 
           </div>
@@ -446,7 +452,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              All
+              {t.common.all}
             </button>
 
 
@@ -459,7 +465,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Home
+              {t.common.home}
             </button>
 
 
@@ -472,7 +478,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Away
+              {t.common.away}
             </button>
 
           </div>
@@ -491,8 +497,8 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
         <section className="rounded-lg border bg-white p-6 text-center shadow-sm">
 
           <div className="text-sm text-gray-500">
-            No categories with at least{" "}
-            {MIN_CATEGORY_MATCHES} matches were found.
+            {t.common.noCategoriesWithAtLeast}{" "}
+            {MIN_CATEGORY_MATCHES} {t.common.matchesD}.
           </div>
 
         </section>
@@ -552,7 +558,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
 
 
                     <span className="rounded bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-                      {categoryMatches.length} matches
+                      {categoryMatches.length} {t.common.matches}
                     </span>
 
                   </button>
@@ -575,7 +581,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
 
                         <div className="border-b px-3 py-2">
                           <h3 className="text-sm font-semibold text-gray-900">
-                            Match Results
+                            {t.common.matchResults}
                           </h3>
                         </div>
 
@@ -583,19 +589,19 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                         <div className="grid grid-cols-2 divide-x sm:grid-cols-3">
 
                           <ResultCard
-                            label="Wins"
+                            label={t.common.wins}
                             value={stats.totalWins}
                             total={stats.matchesPlayed}
                           />
 
                           <ResultCard
-                            label="Draws"
+                            label={t.common.draws}
                             value={stats.totalDraws}
                             total={stats.matchesPlayed}
                           />
 
                           <ResultCard
-                            label="Losses"
+                            label={t.common.losses}
                             value={stats.totalLoss}
                             total={stats.matchesPlayed}
                           />
@@ -613,7 +619,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
 
                         <div className="border-b px-3 py-2">
                           <h3 className="text-sm font-semibold text-gray-900">
-                            First Half Results
+                            {t.common.firstHalf}
                           </h3>
                         </div>
 
@@ -621,19 +627,19 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                         <div className="grid grid-cols-2 divide-x sm:grid-cols-3">
 
                           <ResultCard
-                            label="Wins"
+                            label={t.common.wins}
                             value={stats.totalWinsFirstHalf}
                             total={stats.matchesPlayed}
                           />
 
                           <ResultCard
-                            label="Draws"
+                            label={t.common.draws}
                             value={stats.totalDrawsFirstHalf}
                             total={stats.matchesPlayed}
                           />
 
                           <ResultCard
-                            label="Losses"
+                            label={t.common.losses}
                             value={stats.totalLossFirstHalf}
                             total={stats.matchesPlayed}
                           />
@@ -651,7 +657,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
 
                         <div className="border-b px-3 py-2">
                           <h3 className="text-sm font-semibold text-gray-900">
-                            Second Half Results
+                            {t.common.secondHalf}
                           </h3>
                         </div>
 
@@ -659,19 +665,19 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                         <div className="grid grid-cols-2 divide-x sm:grid-cols-3">
 
                           <ResultCard
-                            label="Wins"
+                            label={t.common.wins}
                             value={stats.totalWinsSecondHalf}
                             total={stats.matchesPlayed}
                           />
 
                           <ResultCard
-                            label="Draws"
+                            label={t.common.draws}
                             value={stats.totalDrawsSecondHalf}
                             total={stats.matchesPlayed}
                           />
 
                           <ResultCard
-                            label="Losses"
+                            label={t.common.losses}
                             value={stats.totalLossSecondHalf}
                             total={stats.matchesPlayed}
                           />
@@ -689,7 +695,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
 
                         <div className="border-b px-3 py-2">
                           <h3 className="text-sm font-semibold text-gray-900">
-                            X Results
+                            {t.common.winOrDraw}
                           </h3>
                         </div>
 
@@ -697,13 +703,13 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                         <div className="grid grid-cols-2 sm:grid-cols-3">
 
                           <ResultCard
-                            label="X"
+                            label={t.common.winOrDraw}
                             value={stats.totalXWins}
                             total={stats.matchesPlayed}
                           />
 
                           <ResultCard
-                            label="Not X"
+                            label={t.common.loss}
                             value={stats.totalXLoss}
                             total={stats.matchesPlayed}
                           />
@@ -712,7 +718,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                           <div className="p-3 text-center">
 
                             <div className="text-xs text-gray-500">
-                              X Rate
+                              {t.common.winOrDrawRate}
                             </div>
 
                             <div className="mt-1 text-lg font-semibold text-gray-900">
@@ -738,11 +744,11 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                         <div className="border-b px-3 py-2">
 
                           <h3 className="text-sm font-semibold text-gray-900">
-                            Recent Sequences
+                            {t.common.sequences}
                           </h3>
 
                           <div className="mt-1 text-xs text-gray-500">
-                            Last 20 matches
+                            {t.common.recentMatches}
                           </div>
 
                         </div>
@@ -756,16 +762,12 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                           <div>
 
                             <div className="mb-2 text-center text-xs font-medium text-gray-700">
-                              Match Sequence
+                              {t.common.matchSequence}
                             </div>
 
                             {renderSequence(
                               stats.currentForm
                             )}
-
-                            <div className="mt-1 text-center text-[10px] text-gray-400">
-                              W = Win · D = Draw · L = Loss
-                            </div>
 
                           </div>
 
@@ -775,7 +777,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                           <div>
 
                             <div className="mb-2 text-center text-xs font-medium text-gray-700">
-                              First Half Sequence
+                              {t.common.firstHalfSequence}
                             </div>
 
                             {renderSequence(
@@ -790,7 +792,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                           <div>
 
                             <div className="mb-2 text-center text-xs font-medium text-gray-700">
-                              Second Half Sequence
+                              {t.common.secondHalfSequence}
                             </div>
 
                             {renderSequence(
@@ -813,7 +815,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                         <div className="border-b px-3 py-2">
 
                           <h3 className="text-sm font-semibold text-gray-900">
-                            Half-Time Winning Patterns
+                            {t.common.halfTimeWinningPatterns}
                           </h3>
 
                         </div>
@@ -827,7 +829,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                           <div className="p-3">
 
                             <div className="text-center text-xs text-gray-500">
-                              Win in Both Halves
+                              {t.common.winInBothHalves}
                             </div>
 
                             <div className="mt-1 text-center text-lg font-semibold text-gray-900">
@@ -862,7 +864,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                           <div className="p-3">
 
                             <div className="text-center text-xs text-gray-500">
-                              Win in At Least One Half
+                              {t.common.winInAtLeastOneHalf}
                             </div>
 
                             <div className="mt-1 text-center text-lg font-semibold text-gray-900">
@@ -907,7 +909,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                           <div className="border-b px-3 py-2">
 
                             <h3 className="text-sm font-semibold text-gray-900">
-                              Home / Away Sequences
+                              {t.common.homeAwaySequences}
                             </h3>
 
                           </div>
@@ -921,14 +923,14 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                             <div className="space-y-4 p-3">
 
                               <div className="text-center text-xs font-semibold text-gray-700">
-                                Home
+                                {t.common.home}
                               </div>
 
 
                               <div>
 
                                 <div className="mb-2 text-center text-xs text-gray-500">
-                                  Match Sequence
+                                  {t.common.matchSequence}
                                 </div>
 
                                 {renderSequence(
@@ -941,7 +943,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                               <div>
 
                                 <div className="mb-2 text-center text-xs text-gray-500">
-                                  First Half
+                                  {t.common.firstHalfSequence}
                                 </div>
 
                                 {renderSequence(
@@ -954,7 +956,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                               <div>
 
                                 <div className="mb-2 text-center text-xs text-gray-500">
-                                  Second Half
+                                  {t.common.secondHalfSequence}
                                 </div>
 
                                 {renderSequence(
@@ -971,14 +973,14 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                             <div className="space-y-4 p-3">
 
                               <div className="text-center text-xs font-semibold text-gray-700">
-                                Away
+                                {t.common.away}
                               </div>
 
 
                               <div>
 
                                 <div className="mb-2 text-center text-xs text-gray-500">
-                                  Match Sequence
+                                  {t.common.matchSequence}
                                 </div>
 
                                 {renderSequence(
@@ -991,7 +993,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                               <div>
 
                                 <div className="mb-2 text-center text-xs text-gray-500">
-                                  First Half
+                                  {t.common.firstHalfSequence}
                                 </div>
 
                                 {renderSequence(
@@ -1004,7 +1006,7 @@ const TeamResultsCategoryView: React.FC<TeamViewProps> = ({
                               <div>
 
                                 <div className="mb-2 text-center text-xs text-gray-500">
-                                  Second Half
+                                  {t.common.secondHalf}
                                 </div>
 
                                 {renderSequence(

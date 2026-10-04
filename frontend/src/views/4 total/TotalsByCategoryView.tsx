@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { ViewProps } from "../../config/panelConfig";
 
@@ -19,7 +19,10 @@ const TotalsByCategoryView: React.FC<ViewProps> = ({
 }) => {
   const language = useLanguage();
   const t = translations[language];
-  
+
+  const [expandedCategories, setExpandedCategories] =
+    useState<Set<string>>(new Set());
+
   const filteredMatches = useFilteredMatches(data, filter);
 
   const finishedMatches = useMemo(() => {
@@ -34,6 +37,44 @@ const TotalsByCategoryView: React.FC<ViewProps> = ({
     );
   }, [finishedMatches]);
 
+  const categories = useMemo(() => {
+    return Object.entries(statistics).sort(
+      ([categoryA], [categoryB]) =>
+        categoryA.localeCompare(categoryB, undefined, {
+          numeric: true,
+        }),
+    );
+  }, [statistics]);
+
+  useEffect(() => {
+    if (categories.length === 0) {
+      setExpandedCategories(new Set());
+      return;
+    }
+
+    setExpandedCategories(
+      new Set([categories[0][0]]),
+    );
+  }, [categories]);
+
+  // ---------------------------------------------------------
+  // Toggle category
+  // ---------------------------------------------------------
+
+  const toggleCategory = (category: string) => {
+    setExpandedCategories((previous) => {
+      const next = new Set(previous);
+
+      if (next.has(category)) {
+        next.delete(category);
+      } else {
+        next.add(category);
+      }
+
+      return next;
+    });
+  };
+
   if (!data) {
     return <div>{t.common.loading}...</div>;
   }
@@ -41,150 +82,168 @@ const TotalsByCategoryView: React.FC<ViewProps> = ({
   const renderGroup = (
     category: string,
     stats: TotalsCategoryResults,
-  ) => (
-    <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
+  ) => {
+    const isExpanded = expandedCategories.has(category);
 
-      {/* Header */}
+    return (
+      <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
 
-      <div className="mb-4 flex items-center justify-between border-b pb-2">
-        <div>
-          <h2 className="text-lg font-bold">
-            {t.common.category} {category}
-          </h2>
+        {/* Header */}
 
-          <div className="text-xs text-gray-500">
-            {getTeamLevelDescription(category)}
-          </div>
-        </div>
+        <button
+          type="button"
+          onClick={() => toggleCategory(category)}
+          className="flex w-full items-center justify-between p-4 text-left"
+        >
+          <div className="flex items-start gap-2">
+            <span className="mt-1 text-sm">
+              {isExpanded ? "▼" : "▶"}
+            </span>
 
-        <div className="rounded bg-gray-100 px-3 py-1 text-sm font-semibold">
-          {stats.matches} {t.common.matches}
-        </div>
-      </div>
+            <div>
+              <h2 className="text-lg font-bold">
+                {t.common.category} {category}
+              </h2>
 
-      {/* Full Time */}
-
-      <div className="mb-5">
-
-        <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600">
-          {t.common.fullTime}
-        </h3>
-
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-5">
-
-          <StatCard
-            title={t.common.Over15}
-            value={`${stats.matchOver15} (${stats.matchOver15Percent.toFixed(
-              1,
-            )}%)`}
-          />
-
-          <StatCard
-            title={t.common.Over25}
-            value={`${stats.matchOver25} (${stats.matchOver25Percent.toFixed(
-              1,
-            )}%)`}
-          />
-
-          <StatCard
-            title={t.common.Over35}
-            value={`${stats.matchOver35} (${stats.matchOver35Percent.toFixed(
-              1,
-            )}%)`}
-          />
-
-          <StatCard
-            title={t.common.Over45}
-            value={`${stats.matchOver45} (${stats.matchOver45Percent.toFixed(
-              1,
-            )}%)`}
-          />
-
-          <StatCard
-            title={t.common.Over55}
-            value={`${stats.matchOver55} (${stats.matchOver55Percent.toFixed(
-              1,
-            )}%)`}
-          />
-
-        </div>
-
-      </div>
-
-      {/* First + Second Half */}
-
-      <div className="grid gap-5 lg:grid-cols-2">
-
-        <div>
-
-          <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600">
-            {t.common.firstHalf}
-          </h3>
-
-          <div className="grid grid-cols-3 gap-2">
-
-            <StatCard
-              title={t.common.Over05}
-              value={`${stats.firstHalfOver05} (${stats.firstHalfOver05Percent.toFixed(
-                1,
-              )}%)`}
-            />
-
-            <StatCard
-              title={t.common.Over15}
-              value={`${stats.firstHalfOver15} (${stats.firstHalfOver15Percent.toFixed(
-                1,
-              )}%)`}
-            />
-
-            <StatCard
-              title={t.common.Over25}
-              value={`${stats.firstHalfOver25} (${stats.firstHalfOver25Percent.toFixed(
-                1,
-              )}%)`}
-            />
-
+              <div className="text-xs text-gray-500">
+                {getTeamLevelDescription(category)}
+              </div>
+            </div>
           </div>
 
-        </div>
-
-        <div>
-
-          <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600">
-            {t.common.secondHalf}
-          </h3>
-
-          <div className="grid grid-cols-3 gap-2">
-
-            <StatCard
-              title={t.common.Over05}
-              value={`${stats.secondHalfOver05} (${stats.secondHalfOver05Percent.toFixed(
-                1,
-              )}%)`}
-            />
-
-            <StatCard
-              title={t.common.Over15}
-              value={`${stats.secondHalfOver15} (${stats.secondHalfOver15Percent.toFixed(
-                1,
-              )}%)`}
-            />
-
-            <StatCard
-              title={t.common.Over25}
-              value={`${stats.secondHalfOver25} (${stats.secondHalfOver25Percent.toFixed(
-                1,
-              )}%)`}
-            />
-
+          <div className="rounded bg-gray-100 px-3 py-1 text-sm font-semibold">
+            {stats.matches} {t.common.matches}
           </div>
+        </button>
 
-        </div>
+        {/* Full Time */}
+
+        {isExpanded && (
+          <div className="border-t border-gray-200 p-4">
+            <div className="mb-5">
+
+              <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600">
+                {t.common.fullTime}
+              </h3>
+
+              <div className="grid grid-cols-2 gap-2 lg:grid-cols-5">
+
+                <StatCard
+                  title={t.common.Over15}
+                  value={`${stats.matchOver15} (${stats.matchOver15Percent.toFixed(
+                    1,
+                  )}%)`}
+                />
+
+                <StatCard
+                  title={t.common.Over25}
+                  value={`${stats.matchOver25} (${stats.matchOver25Percent.toFixed(
+                    1,
+                  )}%)`}
+                />
+
+                <StatCard
+                  title={t.common.Over35}
+                  value={`${stats.matchOver35} (${stats.matchOver35Percent.toFixed(
+                    1,
+                  )}%)`}
+                />
+
+                <StatCard
+                  title={t.common.Over45}
+                  value={`${stats.matchOver45} (${stats.matchOver45Percent.toFixed(
+                    1,
+                  )}%)`}
+                />
+
+                <StatCard
+                  title={t.common.Over55}
+                  value={`${stats.matchOver55} (${stats.matchOver55Percent.toFixed(
+                    1,
+                  )}%)`}
+                />
+
+              </div>
+
+            </div>
+
+            {/* First + Second Half */}
+
+            <div className="grid gap-5 lg:grid-cols-2">
+
+              <div>
+
+                <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600">
+                  {t.common.firstHalf}
+                </h3>
+
+                <div className="grid grid-cols-3 gap-2">
+
+                  <StatCard
+                    title={t.common.Over05}
+                    value={`${stats.firstHalfOver05} (${stats.firstHalfOver05Percent.toFixed(
+                      1,
+                    )}%)`}
+                  />
+
+                  <StatCard
+                    title={t.common.Over15}
+                    value={`${stats.firstHalfOver15} (${stats.firstHalfOver15Percent.toFixed(
+                      1,
+                    )}%)`}
+                  />
+
+                  <StatCard
+                    title={t.common.Over25}
+                    value={`${stats.firstHalfOver25} (${stats.firstHalfOver25Percent.toFixed(
+                      1,
+                    )}%)`}
+                  />
+
+                </div>
+
+              </div>
+
+              <div>
+
+                <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-600">
+                  {t.common.secondHalf}
+                </h3>
+
+                <div className="grid grid-cols-3 gap-2">
+
+                  <StatCard
+                    title={t.common.Over05}
+                    value={`${stats.secondHalfOver05} (${stats.secondHalfOver05Percent.toFixed(
+                      1,
+                    )}%)`}
+                  />
+
+                  <StatCard
+                    title={t.common.Over15}
+                    value={`${stats.secondHalfOver15} (${stats.secondHalfOver15Percent.toFixed(
+                      1,
+                    )}%)`}
+                  />
+
+                  <StatCard
+                    title={t.common.Over25}
+                    value={`${stats.secondHalfOver25} (${stats.secondHalfOver25Percent.toFixed(
+                      1,
+                    )}%)`}
+                  />
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        )}
 
       </div>
-
-    </div>
-  );
+    )
+  };
 
   return (
     <div className="space-y-6">

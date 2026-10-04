@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { ViewProps } from "../../config/panelConfig";
 
@@ -15,13 +15,10 @@ import { getTeamLevelDescription } from "../../utils/getTeamLevelDescription";
 import useLanguage from "../../hooks/useLanguage";
 import { translations } from "../../i18n/translations";
 
-
-
 const AdditionalStatisticsByCategoryView: React.FC<ViewProps> = ({
   data,
   filter,
 }) => {
-
   // ==========================================================
   // LANGUAGE
   // ==========================================================
@@ -30,6 +27,12 @@ const AdditionalStatisticsByCategoryView: React.FC<ViewProps> = ({
 
   const t = translations[language];
 
+  // ==========================================================
+  // EXPANDED CATEGORIES
+  // ==========================================================
+
+  const [expandedCategories, setExpandedCategories] =
+    useState<Set<string>>(new Set());
 
   // ==========================================================
   // FILTERED MATCHES
@@ -40,53 +43,78 @@ const AdditionalStatisticsByCategoryView: React.FC<ViewProps> = ({
     filter,
   );
 
-
   // ==========================================================
   // FINISHED MATCHES
   // ==========================================================
 
   const finishedMatches = useMemo(() => {
-
     return filteredMatches.filter(
-      (match) =>
-        match.status === "finished",
+      (match) => match.status === "finished",
     );
-
-  }, [
-    filteredMatches,
-  ]);
-
+  }, [filteredMatches]);
 
   // ==========================================================
   // STATISTICS
   // ==========================================================
 
   const statistics = useMemo(() => {
-
     return calculateAdditionalStatsByCategory(
       finishedMatches,
     );
+  }, [finishedMatches]);
 
-  }, [
-    finishedMatches,
-  ]);
+  // ==========================================================
+  // SORTED CATEGORIES
+  // ==========================================================
 
+  const categories = useMemo(() => {
+    return Object.entries(statistics).sort(sortCategories);
+  }, [statistics]);
 
+  // ==========================================================
+  // OPEN FIRST CATEGORY
+  // ==========================================================
+
+  useEffect(() => {
+    if (categories.length === 0) {
+      setExpandedCategories(new Set());
+      return;
+    }
+
+    setExpandedCategories(
+      new Set([categories[0][0]]),
+    );
+  }, [categories]);
+
+  // ==========================================================
+  // TOGGLE CATEGORY
+  // ==========================================================
+
+  const toggleCategory = (category: string) => {
+    setExpandedCategories((previous) => {
+      const next = new Set(previous);
+
+      if (next.has(category)) {
+        next.delete(category);
+      } else {
+        next.add(category);
+      }
+
+      return next;
+    });
+  };
 
   // ==========================================================
   // LOADING
   // ==========================================================
 
   if (!data) {
-
     return (
       <div>
         {t.common.loading}...
       </div>
     );
-
   }
-
 
   // ==========================================================
   // HELPERS
@@ -95,30 +123,23 @@ const AdditionalStatisticsByCategoryView: React.FC<ViewProps> = ({
   const getPercent = (
     value: number,
   ): string => {
-
     return `${(value ?? 0).toFixed(1)}%`;
-
   };
-
 
   const getAverage = (
     value: number,
   ): string => {
-
     return (value ?? 0).toFixed(2);
-
   };
-
 
   // ==========================================================
   // CATEGORY SORT
   // ==========================================================
 
-  const sortCategories = (
+  function sortCategories(
     [categoryA]: [string, unknown],
     [categoryB]: [string, unknown],
-  ) => {
-
+  ) {
     const matchA = categoryA.match(/^([A-GH])(\d+)$/);
     const matchB = categoryB.match(/^([A-GH])(\d+)$/);
 
@@ -151,9 +172,7 @@ const AdditionalStatisticsByCategoryView: React.FC<ViewProps> = ({
     }
 
     return numberA - numberB;
-
-  };
-
+  }
 
   // ==========================================================
   // STAT BLOCK
@@ -166,16 +185,13 @@ const AdditionalStatisticsByCategoryView: React.FC<ViewProps> = ({
     statWinPercent: number,
     statAndMatchWinPercent: number,
   ) => {
-
     return (
       <section className="mb-6">
-
         <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-600">
           {title}
         </h3>
 
         <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
-
           <StatCard
             title={t.common.categoryTotal}
             value={`${total}`}
@@ -195,46 +211,52 @@ const AdditionalStatisticsByCategoryView: React.FC<ViewProps> = ({
             title={t.common.categoryStatAndMatchWinPercent}
             value={getPercent(statAndMatchWinPercent)}
           />
-
         </div>
-
       </section>
     );
-
   };
-
 
   // ==========================================================
   // RENDER
   // ==========================================================
 
   return (
-
     <div className="space-y-6">
 
-      {Object.entries(statistics)
-        .sort(sortCategories)
-        .map(([category, stats]) => (
+      {categories.map(([category, stats]) => {
 
+        const isExpanded =
+          expandedCategories.has(category);
+
+        return (
           <section
             key={category}
-            className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm"
+            className="rounded-lg border border-gray-200 bg-white shadow-sm"
           >
 
-            {/* ====================================================
+            {/* ==================================================
                 CATEGORY HEADER
-            ==================================================== */}
+            ================================================== */}
 
-            <div className="mb-6 flex items-center justify-between border-b pb-2">
+            <button
+              type="button"
+              onClick={() => toggleCategory(category)}
+              className="flex w-full items-center justify-between p-4 text-left"
+            >
+              <div className="flex items-start gap-2">
 
-              <div>
+                <span className="mt-1 text-sm">
+                  {isExpanded ? "▼" : "▶"}
+                </span>
 
-                <h2 className="text-lg font-bold">
-                  {t.common.category} {category}
-                </h2>
+                <div>
+                  <h2 className="text-lg font-bold">
+                    {t.common.category} {category}
+                  </h2>
 
-                <div className="text-xs text-gray-500">
-                  {getTeamLevelDescription(category)}
+                  <div className="text-xs text-gray-500">
+                    {getTeamLevelDescription(category)}
+                  </div>
                 </div>
 
               </div>
@@ -242,81 +264,89 @@ const AdditionalStatisticsByCategoryView: React.FC<ViewProps> = ({
               <div className="rounded bg-gray-100 px-3 py-1 text-sm font-semibold">
                 {stats.matches} {t.common.matches}
               </div>
-
-            </div>
-
-
-            {/* ====================================================
-                CORNERS
-            ==================================================== */}
-
-            {renderStatBlock(
-              t.common.corners,
-              stats.totalCorners,
-              stats.cornersAverage,
-              stats.winByCornersPercent,
-              stats.winByCornersAndMatchPercent,
-            )}
+            </button>
 
 
-            {/* ====================================================
-                SHOTS
-            ==================================================== */}
+            {/* ==================================================
+                CATEGORY CONTENT
+            ================================================== */}
 
-            {renderStatBlock(
-              t.common.shots,
-              stats.totalShots,
-              stats.shotsAverage,
-              stats.winByShotsPercent,
-              stats.winByShotsAndMatchPercent,
-            )}
+            {isExpanded && (
+              <div className="border-t border-gray-200 p-4">
 
+                {/* ==================================================
+                    CORNERS
+                ================================================== */}
 
-            {/* ====================================================
-                SHOTS ON TARGET
-            ==================================================== */}
-
-            {renderStatBlock(
-              t.common.shotsOnTarget,
-              stats.totalShotsOT,
-              stats.shotsOTAverage,
-              stats.winByShotsOTPercent,
-              stats.winByShotsOTAndMatchPercent,
-            )}
+                {renderStatBlock(
+                  t.common.corners,
+                  stats.totalCorners,
+                  stats.cornersAverage,
+                  stats.winByCornersPercent,
+                  stats.winByCornersAndMatchPercent,
+                )}
 
 
-            {/* ====================================================
-                EXPECTED GOALS
-            ==================================================== */}
+                {/* ==================================================
+                    SHOTS
+                ================================================== */}
 
-            {renderStatBlock(
-              t.common.expectedGoals,
-              stats.totalXG.toFixed(2),
-              stats.xGAverage,
-              stats.winByXGPercent,
-              stats.winByXGAndMatchPercent,
-            )}
+                {renderStatBlock(
+                  t.common.shots,
+                  stats.totalShots,
+                  stats.shotsAverage,
+                  stats.winByShotsPercent,
+                  stats.winByShotsAndMatchPercent,
+                )}
 
 
-            {/* ====================================================
-                YELLOW CARDS
-            ==================================================== */}
+                {/* ==================================================
+                    SHOTS ON TARGET
+                ================================================== */}
 
-            {renderStatBlock(
-              t.common.yellowCards,
-              stats.totalYellowCards,
-              stats.yellowCardsAverage,
-              stats.winByYellowCardsPercent,
-              stats.winByYellowCardsAndMatchPercent,
+                {renderStatBlock(
+                  t.common.shotsOnTarget,
+                  stats.totalShotsOT,
+                  stats.shotsOTAverage,
+                  stats.winByShotsOTPercent,
+                  stats.winByShotsOTAndMatchPercent,
+                )}
+
+
+                {/* ==================================================
+                    EXPECTED GOALS
+                ================================================== */}
+
+                {renderStatBlock(
+                  t.common.expectedGoals,
+                  stats.totalXG,
+                  stats.xGAverage,
+                  stats.winByXGPercent,
+                  stats.winByXGAndMatchPercent,
+                )}
+
+
+                {/* ==================================================
+                    YELLOW CARDS
+                ================================================== */}
+
+                {renderStatBlock(
+                  t.common.yellowCards,
+                  stats.totalYellowCards,
+                  stats.yellowCardsAverage,
+                  stats.winByYellowCardsPercent,
+                  stats.winByYellowCardsAndMatchPercent,
+                )}
+
+              </div>
             )}
 
           </section>
-
-        ))}
+        );
+      })}
 
     </div>
   );
 };
-
 
 export default AdditionalStatisticsByCategoryView;

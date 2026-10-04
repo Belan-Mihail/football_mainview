@@ -3,7 +3,8 @@ import React, { useMemo, useState } from "react";
 import type { TeamViewProps } from "../config/teamPanelConfig";
 import { calculateGeneralResultStatistics } from "../logic/3TeamsResultGeneralStatistics";
 import { getFavoriteTeamMatches, getNonFavoriteTeamMatches, getStrongFavoriteTeamMatches } from "../utils/filtersGroup";
-
+import useLanguage from "../../hooks/useLanguage";
+import { teamTranslations } from "../config/teamTranslations";
 
 const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
   data,
@@ -14,6 +15,9 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
   >("FAVORITE");
 
   const [side, setSide] = useState<"ALL" | "HOME" | "AWAY">("ALL");
+
+  const language = useLanguage();
+  const t = teamTranslations[language];
 
 
   // =====================================================
@@ -42,7 +46,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
   const favoriteStats = useMemo(() => {
     return {
-      FAVORITE: calculateGeneralResultStatistics(
+      "FAVORITE": calculateGeneralResultStatistics(
         favoriteMatches,
         20,
         data.team.id
@@ -208,17 +212,17 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
   const getSectionTitle = (): string => {
     const groupTitle =
       favoriteSide === "FAVORITE"
-        ? "Favorite"
+        ? t.common.favorite
         : favoriteSide === "STRONG-FAVORITE"
-          ? "Strong Favorite"
-          : "Non-Favorite";
+          ? t.common.strongFavorite
+          : t.common.nonFavorite;
 
     const sideTitle =
       side === "HOME"
-        ? "Home matches"
+        ? t.common.homeMatches
         : side === "AWAY"
-          ? "Away matches"
-          : "All matches";
+          ? t.common.awayMatches
+          : t.common.allMatches;
 
     return `${groupTitle} · ${sideTitle}`;
   };
@@ -333,7 +337,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
             <div>
               <h2 className="text-sm font-semibold text-gray-900">
-                Team Results
+                {t.common.teamResults}
               </h2>
 
               <div className="mt-1 text-xs text-gray-500">
@@ -342,7 +346,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
             </div>
 
             <div className="rounded bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700">
-              {selectedStats.matchesPlayed} matches
+              {selectedStats.matchesPlayed} {t.common.matches}
             </div>
 
           </div>
@@ -360,7 +364,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Favorite
+              {t.common.favorite}
             </button>
 
             <button
@@ -371,7 +375,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Strong Favorite
+              {t.common.strongFavorite}
             </button>
 
             <button
@@ -382,7 +386,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Non-Favorite
+              {t.common.nonFavorite}
             </button>
 
           </div>
@@ -400,7 +404,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              All
+              {t.common.all}
             </button>
 
             <button
@@ -411,7 +415,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Home
+              {t.common.home}
             </button>
 
             <button
@@ -422,7 +426,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
                   : "bg-gray-100 text-gray-700"
               }`}
             >
-              Away
+              {t.common.away}
             </button>
 
           </div>
@@ -440,7 +444,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
         <div className="border-b px-3 py-2">
           <h2 className="text-sm font-semibold text-gray-900">
-            Match Results
+            {t.common.matchResults}
           </h2>
         </div>
 
@@ -448,19 +452,19 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
         <div className="grid grid-cols-2 divide-x sm:grid-cols-3">
 
           <ResultCard
-            label="Wins"
+            label={t.common.wins}
             value={selectedStats.totalWins}
             total={selectedStats.matchesPlayed}
           />
 
           <ResultCard
-            label="Draws"
+            label={t.common.draws}
             value={selectedStats.totalDraws}
             total={selectedStats.matchesPlayed}
           />
 
           <ResultCard
-            label="Losses"
+            label={t.common.losses}
             value={selectedStats.totalLoss}
             total={selectedStats.matchesPlayed}
           />
@@ -478,7 +482,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
         <div className="border-b px-3 py-2">
           <h2 className="text-sm font-semibold text-gray-900">
-            First Half Results
+            {t.common.firstHalf}
           </h2>
         </div>
 
@@ -486,19 +490,19 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
         <div className="grid grid-cols-2 divide-x sm:grid-cols-3">
 
           <ResultCard
-            label="Wins"
+            label={t.common.wins}
             value={selectedStats.totalWinsFirstHalf}
             total={selectedStats.matchesPlayed}
           />
 
           <ResultCard
-            label="Draws"
+            label={t.common.draws}
             value={selectedStats.totalDrawsFirstHalf}
             total={selectedStats.matchesPlayed}
           />
 
           <ResultCard
-            label="Losses"
+            label={t.common.losses}
             value={selectedStats.totalLossFirstHalf}
             total={selectedStats.matchesPlayed}
           />
@@ -516,7 +520,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
         <div className="border-b px-3 py-2">
           <h2 className="text-sm font-semibold text-gray-900">
-            Second Half Results
+            {t.common.secondHalf}
           </h2>
         </div>
 
@@ -524,19 +528,19 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
         <div className="grid grid-cols-2 divide-x sm:grid-cols-3">
 
           <ResultCard
-            label="Wins"
+            label={t.common.wins}
             value={selectedStats.totalWinsSecondHalf}
             total={selectedStats.matchesPlayed}
           />
 
           <ResultCard
-            label="Draws"
+            label={t.common.draws}
             value={selectedStats.totalDrawsSecondHalf}
             total={selectedStats.matchesPlayed}
           />
 
           <ResultCard
-            label="Losses"
+            label={t.common.losses}
             value={selectedStats.totalLossSecondHalf}
             total={selectedStats.matchesPlayed}
           />
@@ -554,7 +558,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
         <div className="border-b px-3 py-2">
           <h2 className="text-sm font-semibold text-gray-900">
-            X Results
+            {t.common.winOrDraw}
           </h2>
         </div>
 
@@ -562,20 +566,20 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
         <div className="grid grid-cols-2 sm:grid-cols-3">
 
           <ResultCard
-            label="X"
+            label={t.common.winOrDraw}
             value={selectedStats.totalXWins}
             total={selectedStats.matchesPlayed}
           />
 
           <ResultCard
-            label="Not X"
+            label={t.common.loss}
             value={selectedStats.totalXLoss}
             total={selectedStats.matchesPlayed}
           />
 
           <div className="p-3 text-center">
             <div className="text-xs text-gray-500">
-              X Rate
+              {t.common.winOrDrawRate}
             </div>
 
             <div className="mt-1 text-lg font-semibold text-gray-900">
@@ -599,11 +603,11 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
         <div className="border-b px-3 py-2">
           <h2 className="text-sm font-semibold text-gray-900">
-            Recent Sequences
+            {t.common.sequences}
           </h2>
 
           <div className="mt-1 text-xs text-gray-500">
-            Last 20 matches
+            {t.common.recentMatches}
           </div>
         </div>
 
@@ -615,14 +619,10 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
           <div>
 
             <div className="mb-2 text-center text-xs font-medium text-gray-700">
-              Match Sequence
+              {t.common.matchSequence}
             </div>
 
             {renderSequence(selectedStats.currentForm)}
-
-            <div className="mt-1 text-center text-[10px] text-gray-400">
-              W = Win · D = Draw · L = Loss
-            </div>
 
           </div>
 
@@ -632,7 +632,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
           <div>
 
             <div className="mb-2 text-center text-xs font-medium text-gray-700">
-              First Half Sequence
+              {t.common.firstHalfSequence}
             </div>
 
             {renderSequence(selectedStats.firstHalfForm)}
@@ -645,7 +645,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
           <div>
 
             <div className="mb-2 text-center text-xs font-medium text-gray-700">
-              Second Half Sequence
+              {t.common.secondHalfSequence}
             </div>
 
             {renderSequence(selectedStats.secondHalfForm)}
@@ -665,7 +665,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
         <div className="border-b px-3 py-2">
           <h2 className="text-sm font-semibold text-gray-900">
-            Half-Time Winning Patterns
+            {t.common.halfTimeWinningPatterns}
           </h2>
         </div>
 
@@ -677,7 +677,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
           <div className="p-3">
 
             <div className="text-center text-xs text-gray-500">
-              Win in Both Halves
+              {t.common.winInBothHalves}
             </div>
 
             <div className="mt-1 text-center text-lg font-semibold text-gray-900">
@@ -706,7 +706,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
           <div className="p-3">
 
             <div className="text-center text-xs text-gray-500">
-              Win in At Least One Half
+              {t.common.winInAtLeastOneHalf}
             </div>
 
             <div className="mt-1 text-center text-lg font-semibold text-gray-900">
@@ -743,7 +743,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
           <div className="border-b px-3 py-2">
             <h2 className="text-sm font-semibold text-gray-900">
-              Home / Away Sequences
+              {t.common.homeAwaySequences}
             </h2>
           </div>
 
@@ -755,12 +755,12 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
             <div className="space-y-4 p-3">
 
               <div className="text-center text-xs font-semibold text-gray-700">
-                Home
+                {t.common.home}
               </div>
 
               <div>
                 <div className="mb-2 text-center text-xs text-gray-500">
-                  Match Sequence
+                  {t.common.matchSequence}
                 </div>
 
                 {renderSequence(stats.currentFormHome)}
@@ -768,7 +768,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
               <div>
                 <div className="mb-2 text-center text-xs text-gray-500">
-                  First Half
+                  {t.common.firstHalf}
                 </div>
 
                 {renderSequence(stats.firstHalfFormHome)}
@@ -776,7 +776,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
               <div>
                 <div className="mb-2 text-center text-xs text-gray-500">
-                  Second Half
+                  {t.common.secondHalf}
                 </div>
 
                 {renderSequence(stats.secondHalfFormHome)}
@@ -790,12 +790,12 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
             <div className="space-y-4 p-3">
 
               <div className="text-center text-xs font-semibold text-gray-700">
-                Away
+                {t.common.away}
               </div>
 
               <div>
                 <div className="mb-2 text-center text-xs text-gray-500">
-                  Match Sequence
+                  {t.common.matchSequence}
                 </div>
 
                 {renderSequence(stats.currentFormAway)}
@@ -803,7 +803,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
               <div>
                 <div className="mb-2 text-center text-xs text-gray-500">
-                  First Half
+                  {t.common.firstHalfSequence}
                 </div>
 
                 {renderSequence(stats.firstHalfFormAway)}
@@ -811,7 +811,7 @@ const TeamResultsFavoriteView: React.FC<TeamViewProps> = ({
 
               <div>
                 <div className="mb-2 text-center text-xs text-gray-500">
-                  Second Half
+                  {t.common.secondHalfSequence}
                 </div>
 
                 {renderSequence(stats.secondHalfFormAway)}
